@@ -1,0 +1,14 @@
+.sidebar {
+  background-color: #27699b;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.sidebar .item a .header {
+  color: orange;
+  text-decoration-color: peru;
+}
+
+a .header {
+  color: orange;
+}
