@@ -18,20 +18,12 @@ export default class App extends Component {
   render() {
     return (
       <div id="app">
-        <Grid columns={2}>
-          <Grid.Row>
-            <Grid.Column>
-              <SideBar />
-            </Grid.Column>
-            <Grid.Column>
-              <div className={"AppContainer"}>
-                <Router onChange={this.handleRoute}>
-                  <MyDashboard path="/" />
-                </Router>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+        <SideBar />
+        <div className={"AppContainer"}>
+          <Router onChange={this.handleRoute}>
+            <MyDashboard path="/" />
+          </Router>
+        </div>
       </div>
     );
   }
