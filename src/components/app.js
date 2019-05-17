@@ -4,6 +4,7 @@ import { Router } from "preact-router";
 // Code-splitting is automated for routes
 import SideBar from "./sidebar";
 import { Grid } from "semantic-ui-react";
+import MyDashboard from "../routes/MyDashboard";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -23,7 +24,11 @@ export default class App extends Component {
               <SideBar />
             </Grid.Column>
             <Grid.Column>
-              <Router onChange={this.handleRoute} />
+              <div className={"AppContainer"}>
+                <Router onChange={this.handleRoute}>
+                  <MyDashboard path="/" />
+                </Router>
+              </div>
             </Grid.Column>
           </Grid.Row>
         </Grid>

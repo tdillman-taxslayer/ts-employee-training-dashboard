@@ -2,7 +2,13 @@
   background-color: #27699b;
   min-height: 100%;
   padding: 20px;
+  margin: 0px;
 }
+/* 
+.sidebar {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+} */
 
 .sidebar .item a .header {
   color: orange;
