@@ -18,12 +18,13 @@ body {
 
 #app {
   height: 100%;
+  display: flex;
+}
+
+#sidebar-container {
+  flex: 0 0 200px;
 }
 
 .AppContainer {
-  min-width: 100%;
-  min-height: 100%;
-  padding-top: 20px;
-  margin-left: 200px;
-  padding-left: 20px;
+  flex: 1;
 }

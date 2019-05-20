@@ -1,19 +1,39 @@
-import Style from "./style.css";
-import { List } from "semantic-ui-react";
+import Style from "./style";
+import {
+  List,
+  ListHeader,
+  ListItem,
+  ListContent,
+  ListIcon
+} from "semantic-ui-react";
+import { route } from "preact-router";
+
+const handleSideBarOnClick = id => {
+  switch (id) {
+    case RouteIDs.DASHBOARD:
+      route("/", true);
+      break;
+    case RouteIDs.LIBRARY:
+      route("/library", true);
+      break;
+  }
+};
 
 const DispenseItem = (name, id, onClickHandler) => {
   return (
-    <List.Item
+    <ListItem
       id={id}
       onClick={() => {
         onClickHandler(id);
       }}
     >
-      <List.Icon name="github" size="small" verticalAlign="middle" />
-      <List.Content>
-        <List.Header as="a">{name}</List.Header>
-      </List.Content>
-    </List.Item>
+      <ListIcon name="github" size="small" verticalAlign="middle" />
+      <ListContent>
+        <ListHeader>
+          <a>{name}</a>
+        </ListHeader>
+      </ListContent>
+    </ListItem>
   );
 };
 /**
@@ -31,15 +51,12 @@ const GenerateItems = (titles, ids, onClickHandler) => {
 };
 
 const SideBar = props => {
-  console.log("sidebar props");
-  console.log(props);
-  const ItemTitles = ["My Dashboard", "Course Library"];
+  const ItemTitles = ["Personal Progress", "Course Library"];
   const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
-  const { onClickHandler } = props;
   return (
     <div className={Style.sidebar}>
       <List divided relaxed>
-        {GenerateItems(ItemTitles, ItemId, onClickHandler)}
+        {GenerateItems(ItemTitles, ItemId, handleSideBarOnClick)}
       </List>
     </div>
   );

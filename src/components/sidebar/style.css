@@ -17,7 +17,7 @@
   margin-bottom: 0px;
 } */
 
-.sidebar a {
-  color: orange;
-  text-decoration-color: peru !important;
+.header a {
+  font-size: 5px;
+  color: black;
 }
