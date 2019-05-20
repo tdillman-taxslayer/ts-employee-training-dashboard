@@ -17,11 +17,7 @@
   margin-bottom: 0px;
 } */
 
-.sidebar .item a .header {
+.sidebar a {
   color: orange;
-  text-decoration-color: peru;
-}
-
-a .header {
-  color: orange;
+  text-decoration-color: peru !important;
 }
