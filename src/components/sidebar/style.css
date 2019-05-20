@@ -1,14 +1,23 @@
 .sidebar {
   background-color: #27699b;
   min-height: 100%;
+  max-width: 200px;
+  min-width: 200px;
   padding: 20px;
+  margin: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
+/* 
+.sidebar {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+} */
 
-.sidebar .item a .header {
+.sidebar a {
   color: orange;
-  text-decoration-color: peru;
-}
-
-a .header {
-  color: orange;
+  text-decoration-color: peru !important;
 }

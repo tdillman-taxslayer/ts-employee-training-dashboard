@@ -20,6 +20,10 @@ body {
   height: 100%;
 }
 
-.ui.grid {
+.AppContainer {
+  min-width: 100%;
   min-height: 100%;
+  padding-top: 20px;
+  margin-left: 200px;
+  padding-left: 20px;
 }
