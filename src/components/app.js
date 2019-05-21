@@ -6,6 +6,8 @@ import SideBar, { RouteIDs } from "./sidebar";
 import { Grid } from "semantic-ui-react";
 import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
+import CapabilityLevels from "../routes/CapabilityLevels";
+import KnowledgeArea from "../routes/KnowledgeArea";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -16,25 +18,20 @@ export default class App extends Component {
     this.currentUrl = e.url;
   };
 
-  handleSideBarOnClick(id) {
-    switch (id) {
-      case RouteIDs.DASHBOARD:
-        route("/", true);
-        break;
-      case RouteIDs.LIBRARY:
-        route("/library", true);
-        break;
-    }
-  }
-
   render() {
     return (
       <div id="app">
-        <SideBar onClickHandler={this.handleSideBarOnClick} />
+        <div id="sidebar-container">
+          <SideBar />
+        </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
-            <Route path="/" component={MyDashboard} />
+            <Route path="/" component={CapabilityLevels} />
             <Route path="/library" component={Library} />
+            <Route
+              path="/:capabilityitem/:knowledgearea?"
+              component={KnowledgeArea}
+            />
           </Router>
         </div>
       </div>
