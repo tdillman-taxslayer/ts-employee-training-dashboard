@@ -30,7 +30,7 @@ const DispenseItem = (name, id, onClickHandler) => {
       <ListIcon name="github" size="small" verticalAlign="middle" />
       <ListContent>
         <ListHeader>
-          <a>{name}</a>
+          <a className={Style.sidebarItem}>{name}</a>
         </ListHeader>
       </ListContent>
     </ListItem>

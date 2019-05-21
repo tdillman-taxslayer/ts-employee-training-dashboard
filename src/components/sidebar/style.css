@@ -17,7 +17,15 @@
   margin-bottom: 0px;
 } */
 
-.header a {
+/* .sidebarItem {
   font-size: 5px;
   color: black;
+} */
+.sidebar a {
+  color: white;
+}
+
+.sidebar a:hover {
+  color: lightgray;
+  cursor: hand;
 }
