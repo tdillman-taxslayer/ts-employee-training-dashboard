@@ -2,6 +2,8 @@ import { Component } from "preact";
 import Style from "./style.css";
 import { KnowledgeAreaGroup } from "../../components/knowledgearea";
 import { knowledgeAreaToFriendlyURL } from "../../utils";
+import { route } from "preact-router";
+import { LibraryGroup } from "../../components/libraryitems";
 
 export default class KnowledgeArea extends Component {
   constructor(props) {
@@ -12,8 +14,9 @@ export default class KnowledgeArea extends Component {
   }
 
   handleOnItemClick(item) {
-    console.log(item);
+    const capabilityItem = this.props.matches["capabilityitem"];
     this.setState({ selectedKey: item });
+    route(`${item}`, true);
   }
 
   render() {
@@ -24,6 +27,7 @@ export default class KnowledgeArea extends Component {
           selectedKey={selectedKey}
           onItemClick={this.handleOnItemClick.bind(this)}
         />
+        <LibraryGroup />
       </div>
     );
   }

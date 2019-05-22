@@ -7,7 +7,10 @@ import source from "../data/ladder.json";
 export const knowledgeAreaToFriendlyURL = index => {
   let areas = source["knowledge-areas"];
   if (index < areas.length) {
-    return areas[index].name.replace(" ", "-").toLowerCase();
+    return areas[index].name
+      .split(" ")
+      .join("-")
+      .toLowerCase();
   } else {
     return null;
   }
