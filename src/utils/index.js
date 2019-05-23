@@ -33,3 +33,21 @@ export const capabilityLevelToURL = index => {
 export const getKnowledgeAreas = () => {
   return source["knowledge-areas"];
 };
+
+/**
+ *
+ * @param {Array} array
+ * @param {Number} size
+ */
+export const equalizeArray = (array, size) => {
+  // array already equalized
+  if (array.length === size) {
+    return array;
+  }
+  let newArray = array;
+  let diff = size - array.length;
+  for (var i = 0; i < diff; i++) {
+    newArray.push(null);
+  }
+  return newArray;
+};
