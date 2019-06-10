@@ -6,7 +6,7 @@ const LoginPage = () => {
     <div>
       <h1>Career Slayer</h1>
       <h5>Welcome, please sign in</h5>
-      <form action="action_page.php">
+      <form action="">
         <div className="imgcontainer">
           <img src="img_avatar2.png" alt="Avatar" className="avatar" />
         </div>

@@ -3,7 +3,7 @@ import source from "../../data/ladder.json";
 import { route } from "preact-router";
 import {
   knowledgeAreaToFriendlyURL,
-  capabilityLevelToURL
+  capabilityLevelToURL,
 } from "../../utils/index.js";
 
 const handleOnClick = id => {
@@ -35,12 +35,12 @@ export const CapabilityItem = props => {
   return (
     <Card fluid onClick={() => handleOnClick(id)}>
       <Card.Content>
-        <Card.Header>{level}</Card.Header>
+        <Card.Header> {level} </Card.Header>{" "}
         <Card.Meta>
-          <div>percentage will go here</div>
-        </Card.Meta>
-        <Card.Description>{description}</Card.Description>
-      </Card.Content>
+          <div> percentage will go here </div>{" "}
+        </Card.Meta>{" "}
+        <Card.Description> {description} </Card.Description>{" "}
+      </Card.Content>{" "}
     </Card>
   );
 };
@@ -49,11 +49,12 @@ export const CapabilityGroup = props => {
   const levels = source["capability-levels"];
   return (
     <div>
+      {" "}
       {levels.map((item, index) => {
         item.handleOnClick = handleOnClick;
         item.id = index;
         return CapabilityItem(item);
-      })}
+      })}{" "}
     </div>
   );
 };

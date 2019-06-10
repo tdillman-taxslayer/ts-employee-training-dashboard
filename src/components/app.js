@@ -8,6 +8,9 @@ import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
+import LoginPage from "./loginPage";
+import CreateAccount from "./createAccount";
+import About from "./about";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -28,10 +31,13 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Route path="/" component={CapabilityLevels} />
             <Route path="/library" component={Library} />
+            <Route path="/login" component={LoginPage} />
+            <Route path="/createaccount" component={CreateAccount} />
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
+            <Route path="/about" component={About} />
           </Router>
         </div>
       </div>

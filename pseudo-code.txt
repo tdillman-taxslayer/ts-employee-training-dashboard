@@ -1,0 +1,54 @@
+​[11:32 AM] Timothy Dillman
+    
+import { h, Component } from "preact";
+import { Router, Route, route } from "preact-router";
+
+// Code-splitting is automated for routes
+import SideBar, { RouteIDs } from "./sidebar";
+import { Grid } from "semantic-ui-react";
+import MyDashboard from "../routes/MyDashboard";
+import Library from "../routes/Library";
+import CapabilityLevels from "../routes/CapabilityLevels";
+import KnowledgeArea from "../routes/KnowledgeArea";
+
+export default class App extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      isAppRoute: false
+  }
+  /** Gets fired when the route changes.
+   *    @param {Object} event        "change" event from [preact-router](http://git.io/preact-router)
+   *    @param {string} event.url    The newly routed URL
+   */
+  handleRoute = e => {
+    this.currentUrl = e.url;
+    if (e.url.contains("/login") {
+        this.setState({ isAppRoute: false });
+    } else {
+      this.setState({ isAppRoute: true });
+    }
+  };
+
+  render() {
+    return (
+      <div id="app">
+        <div id="sidebar-container">
+          { isAppRoute ? <Sidebar /> : nil }
+        </div>
+        <div className={"AppContainer"}>
+          <Router onChange={this.handleRoute}>
+            <Route path="/" component={CapabilityLevels} />
+            <Route path="/library" component={Library} />
+            <Route
+              path="/:capabilityitem/:knowledgearea?"
+              component={KnowledgeArea}
+            />
+          </Router>
+        </div>
+      </div>
+    );
+  }
+}
+
