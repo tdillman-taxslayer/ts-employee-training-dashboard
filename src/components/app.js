@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
 // import { connect } from "react-redux";
-import { Route } from "react-router-dom";
-import { Redirect } from "react-router-dom";
+// import { Route } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 // import { h, Component } from "preact";
-// import { Router, Route, route } from "preact-router";
+import { Router, Route, route } from "preact-router";
 
 // Code-splitting is automated for routes
 import SideBar, { RouteIDs } from "./sidebar";
