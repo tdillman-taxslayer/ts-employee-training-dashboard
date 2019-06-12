@@ -14,10 +14,11 @@ import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
-import LoginPage from "./loginPage";
-import CreateAccount from "./createAccount";
+import LoginPage from "../routes/LoginPage";
+import CreateAccount from "../routes/CreateAccount";
 import About from "./about";
-// import AdminRoute from "./adminRoute";
+import AdminRoute from "./adminRoute";
+// import Redirect from "./redirect";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -28,6 +29,8 @@ export default class App extends Component {
     this.currentUrl = e.url;
   };
 
+  state = { isAuthenticated: false, isAdmin: false };
+
   render() {
     return (
       <div id="app">
@@ -37,7 +40,12 @@ export default class App extends Component {
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
             <Route path="/" component={CapabilityLevels} />
-            <Route path="/library" component={Library} />
+            <Route
+              isAdmin={this.state.isAdmin}
+              isAuthenticated={this.state.isAuthenticated}
+              path="/library"
+              component={Library}
+            />
             <Route path="/login" component={LoginPage} />
             <Route path="/createaccount" component={CreateAccount} />
             <Route
