@@ -1,8 +1,4 @@
-import React, { Component } from "react";
-// import PropTypes from "prop-types";
-// import { connect } from "react-redux";
-// import { Route } from "react-router-dom";
-// import { Redirect } from "react-router-dom";
+import { h, Component } from "preact";
 import Redirect from "../redirect";
 
 export default class AdminRoute extends Component {

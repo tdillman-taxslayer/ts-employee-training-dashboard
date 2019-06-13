@@ -1,10 +1,4 @@
-import React, { Component } from "react";
-// import PropTypes from "prop-types";
-// import { connect } from "react-redux";
-// import { Route } from "react-router-dom";
-// import { Redirect } from "react-router-dom";
-
-// import { h, Component } from "preact";
+import { h, Component } from "preact";
 import { Router, Route, route } from "preact-router";
 
 // Code-splitting is automated for routes
@@ -18,7 +12,7 @@ import LoginPage from "../routes/LoginPage";
 import CreateAccount from "../routes/CreateAccount";
 import About from "./about";
 import AdminRoute from "./adminRoute";
-// import Redirect from "./redirect";
+import Redirect from "./redirect";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
