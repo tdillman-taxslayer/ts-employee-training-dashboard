@@ -24,8 +24,6 @@ export default class App extends Component {
     this.currentUrl = e.url;
   };
 
-  state = { isAuthenticated: false, isAdmin: false };
-
   render() {
     return (
       <div id="app">
@@ -35,7 +33,11 @@ export default class App extends Component {
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
             <Route path="/" component={CapabilityLevels} />
-            <PrivateRoute path="/library" component={Library} />
+            <PrivateRoute
+              auth={auth.isAuthenticated}
+              path="/library"
+              component={Library}
+            />
             <Route path="/login" component={LoginPage} />
             <Route path="/createaccount" component={CreateAccount} />
             <Route
@@ -49,3 +51,7 @@ export default class App extends Component {
     );
   }
 }
+
+const auth = {
+  isAuthenticated: false,
+};
