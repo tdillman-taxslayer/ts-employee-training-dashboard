@@ -53,5 +53,5 @@ export default class App extends Component {
 }
 
 const auth = {
-  isAuthenticated: false,
+  isAuthenticated: false
 };
