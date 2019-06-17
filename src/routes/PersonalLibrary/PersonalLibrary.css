@@ -85,26 +85,26 @@ body {
   cursor: pointer;
 }
 
-/* .left-grid-button {
-    grid-area: left;
-  }
-  
-  .right-grid-button {
-    grid-area: right;
-  } */
-/* .button {
-    width: 100px;
-    background-color: white;
-    color: #333740;
-    float: left;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border: none;
-    font-size: 16px;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  } */
+.left-grid-button {
+  grid-area: left;
+}
+
+.right-grid-button {
+  grid-area: right;
+}
+.button {
+  width: 100px;
+  background-color: white;
+  color: #333740;
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
 .button:hover {
   background-color: lightgray;
