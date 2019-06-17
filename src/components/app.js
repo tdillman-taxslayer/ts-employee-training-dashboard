@@ -26,8 +26,6 @@ export default class App extends Component {
     this.currentUrl = e.url;
   };
 
-  state = { isAuthenticated: false, isAdmin: false };
-
   render() {
     return (
       <div id="app">
@@ -53,3 +51,7 @@ export default class App extends Component {
     );
   }
 }
+
+const auth = {
+  isAuthenticated: false,
+};
