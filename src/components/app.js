@@ -11,9 +11,11 @@ import KnowledgeArea from "../routes/KnowledgeArea";
 import LoginPage from "../routes/LoginPage";
 import CreateAccount from "../routes/CreateAccount";
 import About from "./about";
-// import AdminRoute from "./adminRoute";
+
 import Redirect from "./redirect";
 import PrivateRoute from "../routes/PrivateRoute";
+import Forgot from "../routes/Forgot";
+import PersonalLibrary from "../routes/PersonalLibrary";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -34,15 +36,17 @@ export default class App extends Component {
         </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
+            <Route path="/about" component={About} />
             <Route path="/" component={CapabilityLevels} />
-            <PrivateRoute path="/library" component={Library} />
-            <Route path="/login" component={LoginPage} />
             <Route path="/createaccount" component={CreateAccount} />
+            <Route path="/forgot" component={Forgot} />
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
-            <Route path="/about" component={About} />
+            <Route path="/library" component={Library} />
+            <Route path="/login" component={LoginPage} />
+            <Route path="/personalLibrary" component={PersonalLibrary} />
           </Router>
         </div>
       </div>
