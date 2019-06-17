@@ -51,8 +51,8 @@ const GenerateItems = (titles, ids, onClickHandler) => {
 };
 
 const SideBar = props => {
-  const ItemTitles = ["Course Library", "About"];
-  const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
+  //const ItemTitles = ["Course Library", "About"];
+  //const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
   const ItemTitles = [
     "Personal Progress",
     "Course Library",
