@@ -8,6 +8,8 @@ import MyDashboard from "../routes/Dashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
+import PrivateRoute from "../routes/PrivateRoute";
+import CreateAccount from "../routes/CreateAccount";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -28,6 +30,7 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Route path="/" component={CapabilityLevels} />
             <Route path="/library" component={Library} />
+            <Route path="/createaccount" component={CreateAccount} />
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
@@ -38,3 +41,8 @@ export default class App extends Component {
     );
   }
 }
+
+// To help with authentication later!
+const auth = {
+  isAuthenticated: false,
+};
