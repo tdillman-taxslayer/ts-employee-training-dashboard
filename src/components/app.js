@@ -8,6 +8,7 @@ import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
+import PrivateRoute from "../routes/PrivateRoute";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -38,3 +39,8 @@ export default class App extends Component {
     );
   }
 }
+
+// To help with authentication later!
+const auth = {
+  isAuthenticated: false,
+};
