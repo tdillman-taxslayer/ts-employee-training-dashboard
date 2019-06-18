@@ -51,7 +51,7 @@ const GenerateItems = (titles, ids, onClickHandler) => {
 };
 
 const SideBar = props => {
-  const ItemTitles = ["Course Library", "About"];
+  //const ItemTitles = ["Course Library", "About"];
   const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
   const ItemTitles = [
     "Personal Progress",
@@ -59,8 +59,8 @@ const SideBar = props => {
     "My Dashboard",
     "Personal Library"
   ];
-  const ItemTitles = ["Personal Progress", "Course Library"];
-  const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
+  //const ItemTitles = ["Personal Progress", "Course Library"];
+  //const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
   return (
     <div className={Style.sidebar}>
       <List divided relaxed>
