@@ -61,6 +61,8 @@ const SideBar = props => {
   ];
   //const ItemTitles = ["Personal Progress", "Course Library"];
   //const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
+  const ItemTitles = ["Personal Progress", "Course Library"];
+  const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
   return (
     <div className={Style.sidebar}>
       <List divided relaxed>
