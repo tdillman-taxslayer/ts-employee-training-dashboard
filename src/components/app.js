@@ -32,7 +32,6 @@ export default class App extends Component {
             <Route path="/create" component={Create} />
             <Route path="/forgot" component={Forgot} />
             <Route path="/library" component={Library} />
-            <Route path="/personal" component={PersonalLibrary} />
 
             <Route
               path="/:capabilityitem/:knowledgearea?"
