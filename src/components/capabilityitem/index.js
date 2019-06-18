@@ -33,7 +33,7 @@ const handleOnClick = id => {
 export const CapabilityItem = props => {
   const { level, description, handleOnClick, id } = props;
   return (
-    <Card fluid={() => handleOnClick(id)}>
+    <Card fluid onClick={() => handleOnClick(id)}>
       <Card.Content>
         <Card.Header>{level}</Card.Header>
         <Card.Meta>
