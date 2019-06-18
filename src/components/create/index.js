@@ -16,6 +16,7 @@ class Create extends Component {
     console.log(data);
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://localhost:1300/data", true);
+    xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.send(JSON.stringify(data));
     console.log(JSON.stringify(data));
   };
