@@ -5,8 +5,10 @@ class CreateAccount extends Component {
     super(props);
     this.state = {
       email: "",
-      psw: "",
+      password: "",
       username: "",
+      firstName: "",
+      lastName: "",
     };
   }
 
@@ -37,6 +39,26 @@ class CreateAccount extends Component {
         <form onSubmit={this.handleSubmit} style={{ border: "1px solid #ccc" }}>
           <div className="container">
             <h1>Career Slayer </h1>
+            <label htmlFor="firstName">
+              <b>First Name </b>{" "}
+            </label>
+            <input
+              type="text"
+              placeholder="Enter First Name"
+              name="firstName"
+              required
+              onChange={this.handleInputChange}
+            />
+            <label htmlFor="lastName">
+              <b>Last Name </b>{" "}
+            </label>
+            <input
+              type="text"
+              placeholder="Enter Last Name"
+              name="lastName"
+              required
+              onChange={this.handleInputChange}
+            />
             <label for="email">
               <b>Email</b>
             </label>
@@ -63,7 +85,7 @@ class CreateAccount extends Component {
             <input
               type="password"
               placeholder="Enter Password"
-              name="psw"
+              name="password"
               required
               onChange={this.handleInputChange}
             />
