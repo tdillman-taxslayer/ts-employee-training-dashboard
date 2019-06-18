@@ -4,7 +4,7 @@ import { Router, Route, route } from "preact-router";
 // Code-splitting is automated for routes
 import SideBar, { RouteIDs } from "./sidebar";
 import { Grid } from "semantic-ui-react";
-import MyDashboard from "../routes/MyDashboard";
+import MyDashboard from "../routes/Dashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
