@@ -56,5 +56,3 @@ class PersonalLibrary extends Component {
     );
   }
 }
-
-export default PersonalLibrary;
