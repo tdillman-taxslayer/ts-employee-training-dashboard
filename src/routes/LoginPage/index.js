@@ -1,17 +1,12 @@
-import { h, Component } from "preact";
-import Style from "./style.css";
-
-const LoginPage = () => {
-  return (
-    <div>
-      <h1>Career Slayer</h1>
-      <h5>Welcome, please sign in</h5>
-      <form action="">
-        <div className="imgcontainer">
-          <img src="img_avatar2.png" alt="Avatar" className="avatar" />
-        </div>
-        <div className="container">
-          <label htmlFor="uname">
+import React, { Component } from "preact";
+import SideBar from "../../components/sidebar";
+import Style from "./Login.css";
+export default class Login extends Component {
+  render() {
+    return (
+      <div>
+        <div className={Style.container}>
+          <label for="uname">
             <b>Username</b>
           </label>
           <input
@@ -20,7 +15,7 @@ const LoginPage = () => {
             name="uname"
             required
           />
-          <label htmlFor="psw">
+          <label for="psw">
             <b>Password</b>
           </label>
           <input
@@ -31,21 +26,17 @@ const LoginPage = () => {
           />
           <button type="submit">Login</button>
           <label>
-            <input type="checkbox" defaultChecked="checked" name="remember" />{" "}
-            Remember me
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
           </label>
-        </div>
-        <div className="container" style={{ backgroundColor: "#f1f1f1" }}>
-          <button type="button" className="cancelbtn">
+          <button type="button" className={Style.cancelbtn}>
             Cancel
           </button>
-          <span className="psw">
-            Forgot <a href="#">password?</a>
+          <span className={Style.psw}>
+            Forgot <a href="#">Password></a>
           </span>
         </div>
-      </form>
-    </div>
-  );
-};
-
-export default LoginPage;
+      </div>
+    );
+  }
+}

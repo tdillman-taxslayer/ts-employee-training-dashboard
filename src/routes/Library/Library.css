@@ -3,7 +3,7 @@ body {
 }
 
 .app {
-  margin-left: -190px;
+  margin-left: 160px;
   margin-top: 50px;
 }
 
@@ -50,28 +50,24 @@ body {
 .utilitybar {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 65px;
   width: 100%;
   background-color: #d82631;
   margin-left: 160px;
-  margin-right: 160px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
 }
 
 .utilitybargrid {
-  float: right;
-  box-sizing: border-box;
-  margin-right: 160px;
+  margin-left: 65px;
+  margin-right: 20px;
   display: grid;
-  grid-template-columns: 100px 100px;
-  grid-column-gap: 20px;
+  grid-template-areas: "left right";
+  grid-template-columns: auto 100px;
   height: 100%;
 }
 
 .button {
+  grid-area: right;
   width: 100px;
   background-color: white;
   color: #333740;
@@ -84,27 +80,6 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
-/* .left-grid-button {
-    grid-area: left;
-  }
-  
-  .right-grid-button {
-    grid-area: right;
-  } */
-/* .button {
-    width: 100px;
-    background-color: white;
-    color: #333740;
-    float: left;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border: none;
-    font-size: 16px;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  } */
 
 .button:hover {
   background-color: lightgray;

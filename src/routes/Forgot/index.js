@@ -1,19 +1,14 @@
-import { h, Component } from "preact";
-import "./style.css";
-
-class Forgot extends Component {
-  state = {};
+import { Component } from "preact";
+import Style from "./Forgot.css";
+export default class Create extends Component {
   render() {
     return (
-      <div className="container">
-        <form
-          className="forgot-form"
-          action="action_page.php"
-          style={{ border: "1px solid #ccc" }}
-        >
+      <div>
+        <div className={Style.Componentcontainer} />
+        <form className="forgot-form" action="action_page.php">
           <h1>Career Slayer</h1>
           <h2>Reset Password</h2>
-          <label htmlFor="psw">
+          <label for="psw">
             <b>New Password</b>
           </label>
           <input
@@ -22,8 +17,8 @@ class Forgot extends Component {
             name="psw"
             required
           />
-          <label htmlFor="psw-repeat">
-            <b>Repeat New password</b>
+          <label for="psw-repeat">
+            <b>Repeat New Password</b>
           </label>
           <input
             type="password"
@@ -31,7 +26,7 @@ class Forgot extends Component {
             name="psw-repeat"
             required
           />
-          <button type="submit" className="signupbtn">
+          <button type="submit" class="signupbtn">
             Return Home
           </button>
         </form>
@@ -39,5 +34,3 @@ class Forgot extends Component {
     );
   }
 }
-
-export default Forgot;
