@@ -42,7 +42,7 @@ export default class App extends Component {
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
-            <Route path="/library" component={Library} />
+            <PrivateRoute path="/library" component={Library} />
             <Route path="/login" component={LoginPage} />
             <Route path="/personalLibrary" component={PersonalLibrary} />
           </Router>
