@@ -1,5 +1,3 @@
-import { Card } from "semantic-ui-react";
-
 // using this, create a list of library components that are passed in from an array
 /**
  * example: given an knowledge area "configuration management" at the "introductory" level, display the following

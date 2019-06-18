@@ -37,7 +37,7 @@ export const CapabilityItem = props => {
       <Card.Content>
         <Card.Header>{level}</Card.Header>
         <Card.Meta>
-          <div>percentages  will go here</div>
+          <div>percentage will go here</div>
         </Card.Meta>
         <Card.Description>{description}</Card.Description>
       </Card.Content>

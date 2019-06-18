@@ -1,14 +1,13 @@
-import { Component } from "preact";
+import { h, Component } from "preact";
 import { Router, Route, route } from "preact-router";
 
 // Code-splitting is automated for routes
-
-import KnowledgeArea from "../routes/KnowledgeArea";
-import Home from "../routes/Home";
-import Login from "../routes/Login";
-import Create from "../routes/Create";
-import Forgot from "../routes/Forgot";
+import SideBar, { RouteIDs } from "./sidebar";
+import { Grid } from "semantic-ui-react";
+import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
+import CapabilityLevels from "../routes/CapabilityLevels";
+import KnowledgeArea from "../routes/KnowledgeArea";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -22,17 +21,13 @@ export default class App extends Component {
   render() {
     return (
       <div id="app">
-        {/* <div id="sidebar-container">
+        <div id="sidebar-container">
           <SideBar />
-        </div> */}
+        </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
-            <Route path="/" component={Home} />
-            <Route path="/login" component={Login} />
-            <Route path="/create" component={Create} />
-            <Route path="/forgot" component={Forgot} />
+            <Route path="/" component={CapabilityLevels} />
             <Route path="/library" component={Library} />
-
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}

@@ -51,6 +51,7 @@ const GenerateItems = (titles, ids, onClickHandler) => {
 };
 
 const SideBar = props => {
+<<<<<<< HEAD
   const ItemTitles = ["Course Library", "About"];
   const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
   const ItemTitles = [
@@ -59,6 +60,9 @@ const SideBar = props => {
     "My Dashboard",
     "Personal Library"
   ];
+=======
+  const ItemTitles = ["Personal Progress", "Course Library"];
+>>>>>>> parent of 08662dd... Added Forgot page/login page/ create account page
   const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
   return (
     <div className={Style.sidebar}>
@@ -71,7 +75,7 @@ const SideBar = props => {
 
 export const RouteIDs = {
   DASHBOARD: "my-dashboard",
-  LIBRARY: "Personal-Library"
+  LIBRARY: "course-library"
 };
 
 export default SideBar;
