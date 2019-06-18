@@ -7,6 +7,10 @@ import {
 
 import Style from "./style";
 
+// const styledMenuItem = styled(Menu.Item)`
+//   color: orange;
+// `;
+
 export const KnowledgeItem = (props, handler, selected) => {
   const { name, index } = props;
   return (
