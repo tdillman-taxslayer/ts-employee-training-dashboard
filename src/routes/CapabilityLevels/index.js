@@ -1,6 +1,7 @@
 import { Component } from "preact";
 import { CapabilityGroup } from "../../components/capabilityitem";
 import style from "./style.css";
+import { Sidebar } from "../../components/sidebar";
 export default class CapabilityLevels extends Component {
   constructor(props) {
     super(props);
@@ -31,6 +32,7 @@ export default class CapabilityLevels extends Component {
   render() {
     return (
       <div className={style.CapabilityLevelContainer}>
+        <Sidebar />
         <CapabilityGroup capabilities={this.state.capabilities} />
       </div>
     );
