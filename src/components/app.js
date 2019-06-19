@@ -10,6 +10,7 @@ import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
 import PrivateRoute from "../routes/PrivateRoute";
 import CreateAccount from "../routes/CreateAccount";
+import Login from "../routes/Login";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -29,12 +30,13 @@ export default class App extends Component {
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
             <Route path="/" component={CapabilityLevels} />
-            <Route path="/library" component={Library} />
             <Route path="/createaccount" component={CreateAccount} />
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
+            <Route path="/library" component={Library} />
+            <Route path="/login" component={Login} />
           </Router>
         </div>
       </div>
