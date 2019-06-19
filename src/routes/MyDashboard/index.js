@@ -1,5 +1,6 @@
 import { Component } from "preact";
 import Style from "./style.css";
+import { route } from "preact-router";
 
 export default class Create extends Component {
   render() {
