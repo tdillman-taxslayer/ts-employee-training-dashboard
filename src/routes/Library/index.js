@@ -1,7 +1,6 @@
 import preact, { Component } from "preact";
 import Style from "./library.css";
 
-import SideBar from "../../components/sidebar";
 export default class Library extends Component {
   render() {
     return (

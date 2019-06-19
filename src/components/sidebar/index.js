@@ -17,7 +17,7 @@ const handleSideBarOnClick = id => {
       route("/library", true);
       break;
     case RouteIDs.PERSONALLIBRARY:
-      route("/personalLibrary", true);
+      route("/PersonalLibrary", true);
       break;
     case RouteIDs.INBOX:
       route("/indox", true);
@@ -64,7 +64,7 @@ export const Sidebar = props => {
   //const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
   const ItemTitles = [
     "Personal Progress",
-    "Course Library",
+    "Library",
     "My Dashboard",
     "Personal Library"
   ];
