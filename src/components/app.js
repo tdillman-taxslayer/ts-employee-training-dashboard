@@ -4,7 +4,7 @@ import { Router, Route, route } from "preact-router";
 // Code-splitting is automated for routes
 import SideBar, { RouteIDs } from "./sidebar";
 import { Grid } from "semantic-ui-react";
-import MyDashboard from "../routes/MyDashboard";
+import MyDashboard from "../routes/Dashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
@@ -30,6 +30,7 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Route path="/" component={CapabilityLevels} />
             <Route path="/library" component={Library} />
+            <Route path="/createaccount" component={CreateAccount} />
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
@@ -43,3 +44,8 @@ export default class App extends Component {
     );
   }
 }
+
+// To help with authentication later!
+const auth = {
+  isAuthenticated: false
+};
