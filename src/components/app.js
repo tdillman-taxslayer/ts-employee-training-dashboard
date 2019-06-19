@@ -2,7 +2,7 @@ import { Router, Route, route } from "preact-router";
 import { h, Component } from "preact";
 
 // Code-splitting is automated for routes
-import SideBar, { RouteIDs } from "./sidebar";
+import Sidebar, { RouteIDs } from "./sidebar";
 import { Grid } from "semantic-ui-react";
 import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
@@ -25,7 +25,7 @@ export default class App extends Component {
     return (
       <div id="app">
         <div id="sidebar-container">
-          <SideBar />
+          <Sidebar />
         </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>

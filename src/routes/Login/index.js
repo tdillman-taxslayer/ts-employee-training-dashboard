@@ -3,14 +3,17 @@ import { h, Component } from "preact";
 class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      username: "",
+      password: "",
+    };
   }
 
   handleSubmit = event => {
     event.preventDefault();
     const data = this.state;
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://localhost:1300/login", true);
+    xhttp.open("POST", "http://localhost:1300/login", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.send(JSON.stringify(data));
   };
@@ -36,7 +39,7 @@ class Login extends Component {
             <input
               type="text"
               placeholder="Enter Username"
-              name="uname"
+              name="username"
               required
               onChange={this.handleInputChange}
             />
@@ -46,11 +49,11 @@ class Login extends Component {
             <input
               type="password"
               placeholder="Enter Password"
-              name="psw"
+              name="password"
               required
               onChange={this.handleInputChange}
             />
-            <button type="submit">Login</button>
+            <input type="submit" />
             <label>
               <input type="checkbox" defaultChecked="checked" name="remember" />{" "}
               Remember me
