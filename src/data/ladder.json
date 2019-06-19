@@ -1,92 +1,92 @@
 {
-    "capability-levels": [
-        {
-            "level": "Introductory",
-            "description": "The professional performs or is capable of performing basic work in an area, generally under supervision. The professional is taking effective steps to develop his or her knowledge and skills."
-        },
-        {
-            "level": "Competence",
-            "description": "The professional performs effective, independent work in an area, serves as a role model for less expert professionals, and occasionally coaches others."
-        },
-        {
-            "level": "Leadership",
-            "description": "The professional performs exemplary work in an area. The professional regularly coach professionals and provides project-level and possibly company-wide leadership. The professional is recognized within the company as a major resource in an area."
-        },
-        {
-            "level": "Mastery(future)",
-            "description": "The employee has deep experience across multiple projects and performs reference work in an area.The employee provides industry - level leadership and is recognized outside the company for expertise in the area. Industry - wide, only a handful of professionals will attain this level within each KA."
-        }
-    ],
-    "knowledge-areas": [
-        {
-            "name": "Configuration Management",
-            "description": "Defining how project artifacts are organized and stored, how changes to those artifacts are controlled and managed, and how the system is released to the customer."
-        },
-        {
-            "name": "Construction",
-            "description": "The detailed creation of working software through coding and debugging—and also through detailed design and testing."
-        },
-        {
-            "name": "Design",
-            "description": "Defining the architecture, components, interfaces, and other characteristics of a system or component—the bridge that analyzes requirements and defines the internal structure that serves as the basis for construction."
-        },
-        {
-            "name": "Foundations",
-            "description": "Combines the SWEBOK knowledge areas of professional practices, computing foundations, mathematical foundations, engineering foundations, and engineering economics."
-        },
-        {
-            "name": "Maintenance",
-            "description": "Supporting already-built software—including system installation, deployment, operation, adaptation, perfection, evolution, and migration."
-        },
-        {
-            "name": "Models and Methods",
-            "description": "Syntax, semantics, and pragmatics of notations; representations of information, behavior, and structure; and defining and assessing heuristics, formal methods, prototyping, and Agile methods."
-        },
-        {
-            "name": "Process",
-            "description": "Defining Agile software lifecycles and other lifecycles; measuring software quality, timeliness, and productivity; and assessing and improving software quality, timeliness, and productivity."
-        },
-        {
-            "name": "Management",
-            "description": "Activities related to initiating, estimating, planning, tracking, and managing risks on projects. Involves both managing things and managing people."
-        },
-        {
-            "name": "Quality",
-            "description": "Activities associated with providing confidence that software will satisfy stated and implied needs under specific conditions, including needs for functionality, performance, and safety. Includes planning, managing, measuring, assessing, conducting, and improving these activities."
-        }, 
-        {
-            "name": "Requirements",
-            "description": "Elicitation, analysis, modeling, specification, documentation, and management of the functions to be implemented in software."
-        },
-        {
-            "name": "Testing",
-            "description": "Dynamic verification that a program or system exhibits expected behaviors, performed by executing software to detect defects and evaluate features."
-        }
-    ],
-    "career-levels": [
-        {
-            "level": 1,
-            "title": "Software Developer",
-            "completion": "The professional who has completed Level 1 has some background in software development. This person generally has completed a formal education in a software-related discipline, has minimal professional experience, or both. This person is capable of performing work in selected areas with minimal supervision.",
-            "objective": "Introductory capability in all KAs; Competence in 2 KAs."
-        },
-        {
-            "level": 2,
-            "title": "Senior Software Developer",
-            "completion": "The professional who has completed Level 2 has a fairly strong background in software development and can work independently as needed. This person is expected to be a strong contributor within selected areas on their own teams and is beginning to provide leadership within their own teams. This person has worked multiple completed projects and has experience in each of the basic software development lifecycle steps needed to release a product.",
-            "objective": "Introductory capability in all KAs; Competence in 4 KAs; Leadership in 1 KA."
-        },
-        {
-            "level": 3,
-            "title": "Principle Software Developer",
-            "completion": "The professional who has completed Level 3 has consistently had “wins” during his or her participation in all aspects of small and large projects and has been essential to those projects’ successes. This person has a track record of consistently rendering clear technical judgment and routinely considering project-level issues. This person often provides leadership to others within their own teams and is beginning to provide leadership to the larger organization",
-            "objective": "Introductory capability in all KAs; Competence in 6 KAs; Leadership in 2 KAs."
-        }, 
-        {
-            "level": 3,
-            "title": "Software Technical Manager", 
-            "completion": "The professional who has completed Level 3 has consistently had “wins” during his or her participation in all aspects of small and large projects and has been essential to those projects’ successes. This person has a track record of consistently rendering clear technical judgment and routinely considering project-level issues. This person often provides leadership to others within their own teams and is beginning to provide leadership to the larger organization.",
-            "objective": "Introductory capability in all KAs; Competence in 8 KAs; Leadership in 2 KAs."
-        }
-    ] 
+  "capability-levels": [
+    {
+      "level": "Introductory",
+      "description": "The professional performs or is capable of performing basic work in an area, generally under supervision. The professional is taking effective steps to develop his or her knowledge and skills."
+    },
+    {
+      "level": "Competence",
+      "description": "The professional performs effective, independent work in an area, serves as a role model for less expert professionals, and occasionally coaches others."
+    },
+    {
+      "level": "Leadership",
+      "description": "The professional performs exemplary work in an area. The professional regularly coach professionals and provides project-level and possibly company-wide leadership. The professional is recognized within the company as a major resource in an area."
+    },
+    {
+      "level": "Mastery(future)",
+      "description": "The employee has deep experience across multiple projects and performs reference work in an area.The employee provides industry - level leadership and is recognized outside the company for expertise in the area. Industry - wide, only a handful of professionals will attain this level within each KA."
+    }
+  ],
+  "knowledge-areas": [
+    {
+      "name": "Configuration Management",
+      "description": "Defining how project artifacts are organized and stored, how changes to those artifacts are controlled and managed, and how the system is released to the customer."
+    },
+    {
+      "name": "Construction",
+      "description": "The detailed creation of working software through coding and debugging—and also through detailed design and testing."
+    },
+    {
+      "name": "Design",
+      "description": "Defining the architecture, components, interfaces, and other characteristics of a system or component—the bridge that analyzes requirements and defines the internal structure that serves as the basis for construction."
+    },
+    {
+      "name": "Foundations",
+      "description": "Combines the SWEBOK knowledge areas of professional practices, computing foundations, mathematical foundations, engineering foundations, and engineering economics."
+    },
+    {
+      "name": "Maintenance",
+      "description": "Supporting already-built software—including system installation, deployment, operation, adaptation, perfection, evolution, and migration."
+    },
+    {
+      "name": "Models and Methods",
+      "description": "Syntax, semantics, and pragmatics of notations; representations of information, behavior, and structure; and defining and assessing heuristics, formal methods, prototyping, and Agile methods."
+    },
+    {
+      "name": "Process",
+      "description": "Defining Agile software lifecycles and other lifecycles; measuring software quality, timeliness, and productivity; and assessing and improving software quality, timeliness, and productivity."
+    },
+    {
+      "name": "Management",
+      "description": "Activities related to initiating, estimating, planning, tracking, and managing risks on projects. Involves both managing things and managing people."
+    },
+    {
+      "name": "Quality",
+      "description": "Activities associated with providing confidence that software will satisfy stated and implied needs under specific conditions, including needs for functionality, performance, and safety. Includes planning, managing, measuring, assessing, conducting, and improving these activities."
+    },
+    {
+      "name": "Requirements",
+      "description": "Elicitation, analysis, modeling, specification, documentation, and management of the functions to be implemented in software."
+    },
+    {
+      "name": "Testing",
+      "description": "Dynamic verification that a program or system exhibits expected behaviors, performed by executing software to detect defects and evaluate features."
+    }
+  ],
+  "career-levels": [
+    {
+      "level": 1,
+      "title": "Software Developer",
+      "completion": "The professional who has completed Level 1 has some background in software development. This person generally has completed a formal education in a software-related discipline, has minimal professional experience, or both. This person is capable of performing work in selected areas with minimal supervision.",
+      "objective": "Introductory capability in all KAs; Competence in 2 KAs."
+    },
+    {
+      "level": 2,
+      "title": "Senior Software Developer",
+      "completion": "The professional who has completed Level 2 has a fairly strong background in software development and can work independently as needed. This person is expected to be a strong contributor within selected areas on their own teams and is beginning to provide leadership within their own teams. This person has worked multiple completed projects and has experience in each of the basic software development lifecycle steps needed to release a product.",
+      "objective": "Introductory capability in all KAs; Competence in 4 KAs; Leadership in 1 KA."
+    },
+    {
+      "level": 3,
+      "title": "Principle Software Developer",
+      "completion": "The professional who has completed Level 3 has consistently had “wins” during his or her participation in all aspects of small and large projects and has been essential to those projects’ successes. This person has a track record of consistently rendering clear technical judgment and routinely considering project-level issues. This person often provides leadership to others within their own teams and is beginning to provide leadership to the larger organization",
+      "objective": "Introductory capability in all KAs; Competence in 6 KAs; Leadership in 2 KAs."
+    },
+    {
+      "level": 3,
+      "title": "Software Technical Manager",
+      "completion": "The professional who has completed Level 3 has consistently had “wins” during his or her participation in all aspects of small and large projects and has been essential to those projects’ successes. This person has a track record of consistently rendering clear technical judgment and routinely considering project-level issues. This person often provides leadership to others within their own teams and is beginning to provide leadership to the larger organization.",
+      "objective": "Introductory capability in all KAs; Competence in 8 KAs; Leadership in 2 KAs."
+    }
+  ]
 }

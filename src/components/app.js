@@ -29,6 +29,7 @@ export default class App extends Component {
         </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
+            {/* <Route path="/about" component={About} /> */}
             <Route path="/" component={CapabilityLevels} />
             <Route path="/createaccount" component={CreateAccount} />
             <Route path="/forgot" component={Forgot} />

@@ -16,6 +16,15 @@ const handleSideBarOnClick = id => {
     case RouteIDs.LIBRARY:
       route("/library", true);
       break;
+    case RouteIDs.PERSONALLIBRARY:
+      route("/personalLibrary", true);
+      break;
+    case RouteIDs.INBOX:
+      route("/indox", true);
+      break;
+    case RouteIDs.ABOUT:
+      route("/about");
+      break;
   }
 };
 
@@ -30,9 +39,9 @@ const DispenseItem = (name, id, onClickHandler) => {
       <ListIcon name="github" size="small" verticalAlign="middle" />
       <ListContent>
         <ListHeader>
-          <a className={Style.sidebarItem}>{name}</a>
-        </ListHeader>
-      </ListContent>
+          <a className={Style.sidebarItem}> {name} </a>{" "}
+        </ListHeader>{" "}
+      </ListContent>{" "}
     </ListItem>
   );
 };
@@ -66,8 +75,9 @@ export const Sidebar = props => {
   return (
     <div className={Style.sidebar}>
       <List divided relaxed>
-        {GenerateItems(ItemTitles, ItemId, handleSideBarOnClick)}
-      </List>
+        {" "}
+        {GenerateItems(ItemTitles, ItemId, handleSideBarOnClick)}{" "}
+      </List>{" "}
     </div>
   );
 };
