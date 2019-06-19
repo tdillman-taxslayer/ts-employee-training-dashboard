@@ -1,15 +1,16 @@
-import { h, Component } from "preact";
 import { Router, Route, route } from "preact-router";
+import { h, Component } from "preact";
 
 // Code-splitting is automated for routes
 import SideBar, { RouteIDs } from "./sidebar";
 import { Grid } from "semantic-ui-react";
-import MyDashboard from "../routes/Dashboard";
+import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
-import Create from "../routes/Create";
+import CreateAccount from "../routes/CreateAccount";
 import Login from "../routes/Login";
+import Forgot from "../routes/Forgot";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -35,7 +36,7 @@ export default class App extends Component {
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
-            <Route path="/create" component={Create} />
+            <Route path="/createaccount" component={CreateAccount} />
             <Route path="/login" component={Login} />
             <Route path="/forgot" component={Forgot} />
           </Router>

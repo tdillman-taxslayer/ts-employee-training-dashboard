@@ -1,6 +1,6 @@
 import React, { Component } from "preact";
 import SideBar from "../../components/sidebar";
-import Style from "./Login.css";
+import Style from "./login.css";
 export default class Login extends Component {
   render() {
     return (
