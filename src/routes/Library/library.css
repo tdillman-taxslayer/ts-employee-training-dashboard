@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  margin-left: 160px;
+  margin-top: 50px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333740;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s all linear;
+}
+
+.sidenav a:hover {
+  background: #f1f1f1;
+  color: #333740 !important;
+  font-size: 26px; /* Increased text to enable scrolling */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.main p {
+  text-align: center;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.utilitybar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 65px;
+  width: 100%;
+  background-color: #d82631;
+  margin-left: 160px;
+}
+
+.utilitybargrid {
+  margin-left: 65px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: auto 100px;
+  height: 100%;
+}
+
+.button {
+  grid-area: right;
+  width: 100px;
+  background-color: white;
+  color: #333740;
+  float: right;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightgray;
+}

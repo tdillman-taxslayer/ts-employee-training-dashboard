@@ -1,4 +1,5 @@
 import { h, Component } from "preact";
+import Style from "./style.css";
 
 class CreateAccount extends Component {
   constructor(props) {
