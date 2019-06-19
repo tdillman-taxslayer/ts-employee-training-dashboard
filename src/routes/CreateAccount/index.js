@@ -35,7 +35,6 @@ class CreateAccount extends Component {
     return (
       <div>
         <h1>Sign up here!</h1>
-        <p>Username is: {username}</p>
         <form onSubmit={this.handleSubmit} style={{ border: "1px solid #ccc" }}>
           <div className="container">
             <h1>Career Slayer </h1>
