@@ -50,7 +50,7 @@ const GenerateItems = (titles, ids, onClickHandler) => {
   return items;
 };
 
-const SideBar = props => {
+export const Sidebar = props => {
   //const ItemTitles = ["Course Library", "About"];
   //const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
   const ItemTitles = [
@@ -74,7 +74,5 @@ const SideBar = props => {
 
 export const RouteIDs = {
   DASHBOARD: "my-dashboard",
-  LIBRARY: "course-library"
+  LIBRARY: "Personal-Library"
 };
-
-export default SideBar;

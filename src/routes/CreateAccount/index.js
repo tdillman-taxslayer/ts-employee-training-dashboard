@@ -1,4 +1,5 @@
 import { h, Component } from "preact";
+import Style from "./style.css";
 
 class CreateAccount extends Component {
   constructor(props) {
@@ -6,7 +7,7 @@ class CreateAccount extends Component {
     this.state = {
       email: "",
       psw: "",
-      username: "",
+      username: ""
     };
   }
 
@@ -24,7 +25,7 @@ class CreateAccount extends Component {
   handleInputChange = event => {
     event.preventDefault();
     this.setState({
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     });
   };
 

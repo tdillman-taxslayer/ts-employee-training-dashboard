@@ -1,5 +1,5 @@
-import { h, Component } from "preact";
 import { Router, Route, route } from "preact-router";
+import { h, Component } from "preact";
 
 // Code-splitting is automated for routes
 import SideBar, { RouteIDs } from "./sidebar";
@@ -8,8 +8,9 @@ import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
-import PrivateRoute from "../routes/PrivateRoute";
 import CreateAccount from "../routes/CreateAccount";
+import Login from "../routes/Login";
+import Forgot from "../routes/Forgot";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -35,6 +36,9 @@ export default class App extends Component {
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
+            <Route path="/createaccount" component={CreateAccount} />
+            <Route path="/login" component={Login} />
+            <Route path="/forgot" component={Forgot} />
           </Router>
         </div>
       </div>
