@@ -4,7 +4,7 @@ import {
   ListHeader,
   ListItem,
   ListContent,
-  ListIcon,
+  ListIcon
 } from "semantic-ui-react";
 import { route } from "preact-router";
 
@@ -59,21 +59,19 @@ const GenerateItems = (titles, ids, onClickHandler) => {
   return items;
 };
 
-const SideBar = props => {
+export const Sidebar = props => {
+  //const ItemTitles = ["Course Library", "About"];
+  //const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
   const ItemTitles = [
-    "My DashBoard",
+    "Personal Progress",
     "Course Library",
-    "Personal Library",
-    "Inbox",
-    "About",
+    "My Dashboard",
+    "Personal Library"
   ];
-  const ItemId = [
-    RouteIDs.DASHBOARD,
-    RouteIDs.LIBRARY,
-    RouteIDs.PERSONALLIBRARY,
-    RouteIDs.INBOX,
-    RouteIDs.ABOUT,
-  ];
+  //const ItemTitles = ["Personal Progress", "Course Library"];
+  //const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
+  //const ItemTitles = ["Personal Progress", "Course Library"];
+  const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
   return (
     <div className={Style.sidebar}>
       <List divided relaxed>
@@ -86,10 +84,5 @@ const SideBar = props => {
 
 export const RouteIDs = {
   DASHBOARD: "my-dashboard",
-  LIBRARY: "course-library",
-  PERSONALLIBRARY: "personal-library",
-  INBOX: "inbox",
-  ABOUT: "about",
+  LIBRARY: "Personal-Library"
 };
-
-export default SideBar;

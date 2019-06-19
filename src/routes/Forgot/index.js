@@ -1,35 +1,52 @@
-import { Component } from "preact";
-import Style from "./Forgot.css";
-export default class Create extends Component {
+import React, { Component } from "preact";
+import Style from "./forgot.css";
+import { Sidebar } from "../../components/sidebar";
+export default class Forgot extends Component {
   render() {
     return (
-      <div>
-        <div className={Style.Componentcontainer} />
-        <form className="forgot-form" action="action_page.php">
-          <h1>Career Slayer</h1>
-          <h2>Reset Password</h2>
-          <label for="psw">
-            <b>New Password</b>
-          </label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          />
-          <label for="psw-repeat">
-            <b>Repeat New Password</b>
-          </label>
-          <input
-            type="password"
-            placeholder="Repeat Password"
-            name="psw-repeat"
-            required
-          />
-          <button type="submit" class="signupbtn">
-            Return Home
-          </button>
-        </form>
+      <div className="app">
+        <Sidebar />
+        <div className="utilitybar">
+          <div className="utalitybargrid">
+            <button className="button">Add</button>
+            <button className="button">Filter</button>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="main">
+            <h1>Personal Library</h1>
+            <p>
+              <u>Programming 101</u>
+            </p>
+            <p>
+              <u>Python Basics</u>
+            </p>
+            <p>
+              <u>Cyber Threat Analysis</u>
+            </p>
+            <p>
+              <u>C++ basics</u>
+            </p>
+            <p>
+              <u>HTML 5 Changes</u>
+            </p>
+            <p>
+              <u>Security Training</u>
+            </p>
+            <p>
+              <u>Ecmascript</u>
+            </p>
+            <p>
+              <u>Javascript Basics</u>
+            </p>
+          </div>
+        </div>
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search for names.."
+        />
       </div>
     );
   }

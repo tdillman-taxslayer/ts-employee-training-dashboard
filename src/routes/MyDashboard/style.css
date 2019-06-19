@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.app {
+  margin-left: 160px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333740;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s all linear;
+}
+
+.sidenav a:hover {
+  background: #f1f1f1;
+  color: #333740 !important;
+  font-size: 26px; /* Increased text to enable scrolling */
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.column h3 {
+  text-align: center;
+}
+
+.assignmentlist {
+  list-style: none;
+}
+
+.assignmentlist li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.utilbar {
+  width: 100%;
+  height: 65px;
+  margin-left: 160px;
+  padding: 0;
+  background-color: #d82631;
+}
+
+.utilbargrid h1 {
+  color: white;
+}
+
+.topbar {
+  display: grid;
+  grid-template-areas: "text text text";
+  grid-template-columns: repeat(1ft, 3);
+  background-color: rgb(173, 10, 10);
+}
+
+.topbar h3 {
+  text-align: center;
+  color: white;
+}
+
+.main {
+  padding-left: 235px;
+  padding-bottom: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 33px;
+  padding-top: 15px;
+  color: #d82631;
+}
+
+.profile {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  min-width: 700px;
+  max-width: 1200px;
+  width: auto;
+  height: 90px;
+  padding-left: 235px;
+  padding-right: 100px;
+  padding-top: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 55px);
+}
+
+.firstName,
+.lastName,
+.dateOfBirth {
+  border-top: #333740 solid 2px;
+  padding-top: 20px;
+}
+
+.skills {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-bottom: #333740 solid 2px;
+  padding-top: 13px;
+}
+
+.firstName,
+.skills {
+  border-left: #333740 solid 2px;
+  padding-left: 70px;
+}
+
+.dateOfBirth,
+.skills {
+  border-right: #333740 solid 2px;
+}
+
+.box {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-top: 50px;
+  text-align: center;
+  padding-left: 280px;
+  padding-right: 170px;
+  max-width: 1300px;
+}
+
+.table {
+  padding-left: 450px;
+  padding-right: 350px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 125px repeat(11, auto);
+  grid-template-rows: 200px repeat(4, 30px);
+  max-width: 850px;
+}
+
+.configurationManagement,
+.construction,
+.design,
+.foundations,
+.maintenance,
+.modelsAndMethods,
+.process,
+.management,
+.quality,
+.requirements,
+.testing {
+  border: 1px #333740 solid;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: #d82631;
+  color: white;
+}
+
+.capabilityLevel,
+.introductory,
+.competence,
+.leadership,
+.mastery,
+.blank {
+  border: 1px #333740 solid;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  background-color: #d82631;
+  color: white;
+}
+
+.grid2 {
+  height: 700px;
+  width: auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 7% 23% 30% 40%;
+  padding-left: 170px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.category,
+.activity,
+.reading,
+.blank1,
+.training,
+.blank2,
+.professionalExperience,
+.blank3 {
+  border-bottom: 2px #333740 solid;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 200px;
+}
+
+.category,
+.reading,
+.training,
+.professionalExperience {
+  border-right: 2px #333740 solid;
+  border-left: 2px #333740 solid;
+}
+
+.category,
+.activity {
+  background-color: #d82631;
+  color: white;
+  border-top: 2px #333740 solid;
+}
+
+.activity,
+.blank1,
+.blank2,
+.blank3 {
+  border-right: 2px #333740 solid;
+}

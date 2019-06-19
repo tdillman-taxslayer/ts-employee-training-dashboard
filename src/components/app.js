@@ -1,5 +1,5 @@
-import { h, Component } from "preact";
 import { Router, Route, route } from "preact-router";
+import { h, Component } from "preact";
 
 // Code-splitting is automated for routes
 import SideBar, { RouteIDs } from "./sidebar";
@@ -8,14 +8,9 @@ import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
 import KnowledgeArea from "../routes/KnowledgeArea";
-import LoginPage from "../routes/LoginPage";
 import CreateAccount from "../routes/CreateAccount";
-import About from "./about";
-
-import Redirect from "./redirect";
-import PrivateRoute from "../routes/PrivateRoute";
+import Login from "../routes/Login";
 import Forgot from "../routes/Forgot";
-import PersonalLibrary from "../routes/PersonalLibrary";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -36,15 +31,15 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Route path="/about" component={About} />
             <Route path="/" component={CapabilityLevels} />
+            <Route path="/library" component={Library} />
             <Route path="/createaccount" component={CreateAccount} />
-            <Route path="/forgot" component={Forgot} />
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
-            <PrivateRoute path="/library" component={Library} />
-            <Route path="/login" component={LoginPage} />
-            <Route path="/personalLibrary" component={PersonalLibrary} />
+            <Route path="/createaccount" component={CreateAccount} />
+            <Route path="/login" component={Login} />
+            <Route path="/forgot" component={Forgot} />
           </Router>
         </div>
       </div>
@@ -52,6 +47,7 @@ export default class App extends Component {
   }
 }
 
+// To help with authentication later!
 const auth = {
   isAuthenticated: false
 };
