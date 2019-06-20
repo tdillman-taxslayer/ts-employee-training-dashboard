@@ -43,7 +43,7 @@ export default class App extends Component {
             <Route path="/createaccount" component={CreateAccount} />
             <Route path="/login" component={Login} />
             <Route path="/forgot" component={Forgot} />
-            <Route path="/personallibrary" component={PersonalLibrary} />
+            <Route path="/PersonalLibrary" component={PersonalLibrary} />
           </Router>
         </div>
       </div>

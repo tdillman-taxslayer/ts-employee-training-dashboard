@@ -1,20 +1,21 @@
-import React, { Component } from "preact";
-import { Sidebar } from "../../components/sidebar";
+import { Component } from "preact";
 import style from "./style.css";
+import { Sidebar } from "../../components/sidebar";
 
 export default class PersonalLibrary extends Component {
   render() {
     return (
-      <div className="app">
+      <div className={style.app}>
         <Sidebar />
-        <div className="utilitybar">
-          <div className="utalitybargrid">
-            <button className="button">Add</button>
-            <button className="button">Filter</button>
+        <div className={style.Componentcontainer} />
+        <div className={style.utilitybar}>
+          <div className={style.utilitybargrid}>
+            <button className={style.button}>Add</button>
+            <button className={style.button}>Filter</button>
           </div>
         </div>
-        <div class="grid">
-          <div class="main">
+        <div className={style.grid}>
+          <div className={style.main}>
             <h1>Personal Library</h1>
             <p>
               <u>Programming 101</u>

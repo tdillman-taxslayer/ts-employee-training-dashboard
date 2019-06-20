@@ -24,7 +24,7 @@ body {
 }
 
 .main {
-  padding-left: 175px;
+  padding-left: 55px;
   padding-top: 15px;
   font-family: "Roboto", sans-serif;
   font-size: 33px;
@@ -36,7 +36,7 @@ body {
   height: auto;
   grid-template-rows: 200px auto;
   grid-template-columns: repeat(4, auto);
-  padding-left: 175px;
+  padding-left: 55px;
   padding-right: 15px;
   padding-top: 20px;
   font-family: "Roboto", sans-serif;
@@ -66,7 +66,7 @@ body {
   display: grid;
   grid-template-rows: 30px repeat(11, auto);
   grid-template-columns: 20% 80%;
-  padding-left: 175px;
+  padding-left: 55px;
   padding-right: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -106,7 +106,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 200;
-  padding-left: 170px;
+  padding-left: 55px;
   padding-top: 10px;
 }
 
