@@ -1,4 +1,5 @@
 import { h, Component } from "preact";
+import axios from "axios";
 
 class Login extends Component {
   constructor(props) {
@@ -12,10 +13,16 @@ class Login extends Component {
   handleSubmit = event => {
     event.preventDefault();
     const data = this.state;
-    const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost:1300/login", true);
-    xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.send(JSON.stringify(data));
+    const arr = []; // To hold session token
+
+    axios({
+      method: "post",
+      url: "http://localhost:1300/login",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: data,
+    }).then(response => console.log(response.data));
   };
 
   handleInputChange = event => {
