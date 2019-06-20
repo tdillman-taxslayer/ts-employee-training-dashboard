@@ -1,11 +1,12 @@
 import preact, { Component } from "preact";
 import Style from "./library.css";
+import { Sidebar } from "../../components/sidebar";
 
-import SideBar from "../../components/sidebar";
 export default class Library extends Component {
   render() {
     return (
       <div className={Style.Componentcontainer}>
+        <Sidebar />
         <div className={Style.app}>
           <div className="utilitybar">
             <div className="utilitybargrid">

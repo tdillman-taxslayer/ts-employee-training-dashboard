@@ -1,0 +1,126 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333740;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s all linear;
+}
+
+.main {
+  padding-left: 175px;
+  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 33px;
+}
+
+.capabilityLevels {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-rows: 200px auto;
+  grid-template-columns: repeat(4, auto);
+  padding-left: 175px;
+  padding-right: 15px;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  grid-row-gap: 15px;
+  font-weight: 200;
+}
+
+.introductory,
+.competence,
+.leadership,
+.mastery {
+  border: 2px #333740 solid;
+  text-align: center;
+  font-size: 23px;
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+  padding-left: 15px;
+  border: 2px #333740 solid;
+  font-size: 20px;
+}
+
+.knowledgeAreas {
+  display: grid;
+  grid-template-rows: 30px repeat(11, auto);
+  grid-template-columns: 20% 80%;
+  padding-left: 175px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.area,
+.paragraph,
+.KA,
+.description {
+  border-bottom: 2px #333740 solid;
+}
+
+.KA,
+.description {
+  border-top: 2px #333740 solid;
+  background-color: #d82631;
+  color: white;
+}
+
+.KA,
+.area {
+  border-left: 2px #333740 solid;
+  border-right: 2px #333740 solid;
+  padding-left: 7px;
+}
+
+.description,
+.paragraph {
+  border-right: 2px #333740 solid;
+  padding-left: 7px;
+}
+
+.goals {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 170px;
+  padding-top: 10px;
+}
+
+.sidenav a:hover {
+  background: #f1f1f1;
+  color: #333740 !important;
+  font-size: 26px; /* Increased text to enable scrolling */
+}
+
+/* @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  } */

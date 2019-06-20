@@ -11,20 +11,21 @@ import { route } from "preact-router";
 const handleSideBarOnClick = id => {
   switch (id) {
     case RouteIDs.DASHBOARD:
-      route("/", true);
+      route("/MyDashboard", true);
       break;
     case RouteIDs.LIBRARY:
-      route("/library", true);
+      route("/Library", true);
       break;
     case RouteIDs.PERSONALLIBRARY:
-      route("/personalLibrary", true);
-      break;
-    case RouteIDs.INBOX:
-      route("/indox", true);
+      route("/PersonalLibrary", true);
       break;
     case RouteIDs.ABOUT:
-      route("/about");
+      route("/About", true);
       break;
+
+    /*    case RouteIDs.INBOX:
+      route("/indox", true);
+      break;*/
   }
 };
 
@@ -62,16 +63,11 @@ const GenerateItems = (titles, ids, onClickHandler) => {
 export const Sidebar = props => {
   //const ItemTitles = ["Course Library", "About"];
   //const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
-  const ItemTitles = [
-    "Personal Progress",
-    "Course Library",
-    "My Dashboard",
-    "Personal Library"
-  ];
+  const ItemTitles = ["My Dashboard", "Course Library", "About"];
   //const ItemTitles = ["Personal Progress", "Course Library"];
   //const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
   //const ItemTitles = ["Personal Progress", "Course Library"];
-  const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
+  const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY, RouteIDs.ABOUT];
   return (
     <div className={Style.sidebar}>
       <List divided relaxed>
@@ -84,5 +80,6 @@ export const Sidebar = props => {
 
 export const RouteIDs = {
   DASHBOARD: "my-dashboard",
-  LIBRARY: "Personal-Library"
+  LIBRARY: "Library",
+  ABOUT: "About"
 };
