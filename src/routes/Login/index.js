@@ -6,7 +6,7 @@ class Login extends Component {
     super(props);
     this.state = {
       username: "",
-      password: "",
+      password: ""
     };
   }
 
@@ -19,10 +19,15 @@ class Login extends Component {
       method: "post",
       url: "http://localhost:1300/login",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      data: data,
-    }).then(response => console.log(response.data));
+      data: data
+    }).then(response => {
+      console.log(response.data);
+      localStorage.setItem("session", response.data);
+    });
+
+    // .then(() => window.location.replace("/"));
   };
 
   handleInputChange = event => {
