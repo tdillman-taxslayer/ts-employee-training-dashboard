@@ -33,7 +33,7 @@ export default class App extends Component {
             {/* <Route path="/about" component={About} /> */}
             <Route path="/" component={CapabilityLevels} />
             <Route path="/library" component={Library} />
-            <Route path="/createaccount" component={CreateAccount} />
+
             <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}

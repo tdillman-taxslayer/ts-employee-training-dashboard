@@ -17,7 +17,7 @@ const handleSideBarOnClick = id => {
       route("/library", true);
       break;
     case RouteIDs.PERSONALLIBRARY:
-      route("/PersonalLibrary", true);
+      route("/personallibrary", true);
       break;
     case RouteIDs.INBOX:
       route("/indox", true);

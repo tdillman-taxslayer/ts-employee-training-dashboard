@@ -1,7 +1,7 @@
 import React, { Component } from "preact";
-import Sidebar from "../..components/sidebar";
-import style from "style.css";
-import Sidebar from "../..components/sidebar";
+import { Sidebar } from "../../components/sidebar";
+import style from "./style.css";
+
 export default class PersonalLibrary extends Component {
   render() {
     return (
