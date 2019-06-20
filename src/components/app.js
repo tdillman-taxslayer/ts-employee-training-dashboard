@@ -45,6 +45,13 @@ export default class App extends Component {
   }
 }
 
+authenticating = () => {
+  if (window.localStorage.session) {
+  } else {
+    return false;
+  }
+};
+
 // To help with authentication later!
 const auth = {
   isAuthenticated: false
