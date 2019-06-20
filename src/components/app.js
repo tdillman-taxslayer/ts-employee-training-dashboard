@@ -12,6 +12,7 @@ import CreateAccount from "../routes/CreateAccount";
 import Login from "../routes/Login";
 import Forgot from "../routes/Forgot";
 import About from "../routes/About";
+import PersonalLibrary from "../routes/PersonalLibrary";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -42,6 +43,7 @@ export default class App extends Component {
             <Route path="/createaccount" component={CreateAccount} />
             <Route path="/login" component={Login} />
             <Route path="/forgot" component={Forgot} />
+            <Route path="/personallibrary" component={PersonalLibrary} />
           </Router>
         </div>
       </div>
