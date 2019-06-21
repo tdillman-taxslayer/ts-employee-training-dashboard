@@ -3,8 +3,8 @@ body {
 }
 
 .app {
-  margin-left: -190px;
-  margin-top: 50px;
+  margin-left: 290px;
+  margin-top: 90px;
 }
 
 .sidenav {
@@ -108,4 +108,9 @@ body {
 
 .button:hover {
   background-color: lightgray;
+}
+
+input {
+  margin-left: 200px;
+  margin-top: 50px;
 }
