@@ -45,12 +45,7 @@ export default class App extends Component {
     );
   }
 }
-/*
-if session
-  if session rturns object id return true
-  else false 
-else false
-*/
+
 const authenticating = () => {
   console.log(window.localStorage.session);
 
