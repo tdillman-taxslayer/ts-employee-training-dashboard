@@ -161,7 +161,8 @@ body {
   font-size: 16px;
   font-weight: 200;
   writing-mode: vertical-rl;
-  text-orientation: upright;
+  /*text-orientation: sideways-left;*/
+  transform: rotate(180deg);
   background-color: #d82631;
   color: white;
 }

@@ -8,13 +8,13 @@ export default class Library extends Component {
       <div className={Style.Componentcontainer}>
         <Sidebar />
         <div className={Style.app}>
-          <div className="utilitybar">
-            <div className="utilitybargrid">
-              <button class="button">Filter</button>
+          <div className={Style.utilitybar}>
+            <div className={Style.utilitybargrid}>
+              <button class={Style.button}>Filter</button>
             </div>
           </div>
-          <div className="grid">
-            <div className="main">
+          <div className={Style.grid}>
+            <div className={Style.main}>
               <h1>Library</h1>
               <p>
                 <u>Programming 101</u>
@@ -40,40 +40,6 @@ export default class Library extends Component {
               <p>
                 <u>Javascript Basics</u>
               </p>
-            </div>
-            <div className="main">
-              <h1>Trining</h1>
-              <h1>Personal Library</h1>
-              <p>
-                <u>Programming 101</u>
-              </p>
-              <p>
-                <u>Python Basics</u>
-              </p>
-              <p>
-                <u>Cyber Threat Analysis</u>
-              </p>
-              <p>
-                <u>C++ basics</u>
-              </p>
-              <p>
-                <u>HTML 5 Changes</u>
-              </p>
-              <p>
-                <u>Security Training</u>
-              </p>
-              <p>
-                <u>Ecmascript</u>
-              </p>
-              <p>
-                <u>Javascript Basics</u>
-              </p>
-              <input
-                type="text"
-                id="myInput"
-                onkeyup="myFunction()"
-                placeholder="Search for names.."
-              />
             </div>
           </div>
         </div>
