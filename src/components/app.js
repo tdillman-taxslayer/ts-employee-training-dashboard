@@ -1,5 +1,6 @@
 import { Router, Route, route } from "preact-router";
 import { h, Component } from "preact";
+import axios from "axios";
 
 // Code-splitting is automated for routes
 import { Sidebar, RouteIDs } from "./sidebar";
@@ -44,9 +45,35 @@ export default class App extends Component {
     );
   }
 }
+/*
+if session
+  if session rturns object id return true
+  else false 
+else false
+*/
+const authenticating = () => {
+  console.log(window.localStorage.session);
 
-authenticating = () => {
   if (window.localStorage.session) {
+    axios({
+      url: "http://localhost:1300/session",
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: { token: window.localStorage.session },
+    }).then(response => {
+      console.log(response.data);
+
+      if (response.data.auth == "true") {
+        console.log("Server authenticated");
+        return true;
+      } else {
+        console.log("not auth");
+
+        return false;
+      }
+    });
   } else {
     return false;
   }
@@ -54,5 +81,5 @@ authenticating = () => {
 
 // To help with authentication later!
 const auth = {
-  isAuthenticated: false
+  isAuthenticated: authenticating(),
 };
