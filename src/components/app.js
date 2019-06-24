@@ -14,6 +14,7 @@ import Login from "../routes/Login";
 import Forgot from "../routes/Forgot";
 import About from "../routes/About";
 import PersonalLibrary from "../routes/PersonalLibrary";
+import PrivateRoute from "../routes/PrivateRoute";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -32,18 +33,43 @@ export default class App extends Component {
         </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
-            <Route path="/About" component={About} />
-            <Route path="/" component={CapabilityLevels} />
-            <Route path="/Library" component={Library} />
+            <PrivateRoute
+              auth={() => authenticating()}
+              path="/About"
+              component={About}
+            />
+            <PrivateRoute
+              auth={() => authenticating()}
+              path="/"
+              component={CapabilityLevels}
+            />
             <Route path="/createaccount" component={CreateAccount} />
-            <Route path="/MyDashboard" component={MyDashboard} />
-            <Route
+            <PrivateRoute
+              auth={() => authenticating()}
+              path="/forgot"
+              component={Forgot}
+            />
+            <PrivateRoute
+              auth={() => authenticating()}
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
+            <PrivateRoute
+              auth={() => authenticating()}
+              path="/Library"
+              component={Library}
+            />
             <Route path="/login" component={Login} />
-            <Route path="/forgot" component={Forgot} />
-            <Route path="/PersonalLibrary" component={PersonalLibrary} />
+            <PrivateRoute
+              auth={() => authenticating()}
+              path="/MyDashboard"
+              component={MyDashboard}
+            />
+            <PrivateRoute
+              auth={() => authenticating()}
+              path="/PersonalLibrary"
+              component={PersonalLibrary}
+            />
           </Router>
         </div>
       </div>
@@ -59,9 +85,9 @@ const authenticating = () => {
       url: "http://localhost:1300/session",
       method: "post",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      data: { token: window.localStorage.session },
+      data: { token: window.localStorage.session }
     }).then(response => {
       console.log(response.data);
 
@@ -81,5 +107,5 @@ const authenticating = () => {
 
 // To help with authentication later!
 const auth = {
-  isAuthenticated: authenticating(),
+  isAuthenticated: authenticating()
 };
