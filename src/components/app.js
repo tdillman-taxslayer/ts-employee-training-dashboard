@@ -1,6 +1,7 @@
 import { Router, Route, route } from "preact-router";
 import { h, Component } from "preact";
 import axios from "axios";
+import Parse from "parse";
 
 // Code-splitting is automated for routes
 import { Sidebar, RouteIDs } from "./sidebar";
@@ -26,6 +27,14 @@ export default class App extends Component {
   };
 
   render() {
+    {
+      /*Parse.initialize("your_app_id", "client_key");
+    Parse.serverURL = "http://localhost:1337/parse";
+    const Library = Parse.Object.extend("Library");
+    const query = new Parse.Query(Library);
+    query.equalTo("title", "Scrum Guide");
+    query.find().then(obj => console.log(obj));*/
+    }
     return (
       <div id="app">
         <div id="sidebar-container">
@@ -33,43 +42,18 @@ export default class App extends Component {
         </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
-            <PrivateRoute
-              auth={() => authenticating()}
-              path="/About"
-              component={About}
-            />
-            <PrivateRoute
-              auth={() => authenticating()}
-              path="/"
-              component={CapabilityLevels}
-            />
+            <Route path="/About" component={About} />
+            <Route path="/" component={CapabilityLevels} />
             <Route path="/createaccount" component={CreateAccount} />
-            <PrivateRoute
-              auth={() => authenticating()}
-              path="/forgot"
-              component={Forgot}
-            />
-            <PrivateRoute
-              auth={() => authenticating()}
+            <Route path="/forgot" component={Forgot} />
+            <Route
               path="/:capabilityitem/:knowledgearea?"
               component={KnowledgeArea}
             />
-            <PrivateRoute
-              auth={() => authenticating()}
-              path="/Library"
-              component={Library}
-            />
+            <Route path="/Library" component={Library} />
             <Route path="/login" component={Login} />
-            <PrivateRoute
-              auth={() => authenticating()}
-              path="/MyDashboard"
-              component={MyDashboard}
-            />
-            <PrivateRoute
-              auth={() => authenticating()}
-              path="/PersonalLibrary"
-              component={PersonalLibrary}
-            />
+            <Route path="/MyDashboard" component={MyDashboard} />
+            <Route path="/PersonalLibrary" component={PersonalLibrary} />
           </Router>
         </div>
       </div>
@@ -77,6 +61,7 @@ export default class App extends Component {
   }
 }
 
+// Parse does authenticating on it's own.
 const authenticating = () => {
   console.log(window.localStorage.session);
 
@@ -85,9 +70,9 @@ const authenticating = () => {
       url: "http://localhost:1300/session",
       method: "post",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      data: { token: window.localStorage.session }
+      data: { token: window.localStorage.session },
     }).then(response => {
       console.log(response.data);
 
@@ -107,5 +92,5 @@ const authenticating = () => {
 
 // To help with authentication later!
 const auth = {
-  isAuthenticated: authenticating()
+  isAuthenticated: authenticating(),
 };
