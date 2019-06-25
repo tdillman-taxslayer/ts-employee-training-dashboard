@@ -18,6 +18,9 @@ import About from "../routes/About";
 import PersonalLibrary from "../routes/PersonalLibrary";
 import PrivateRoute from "../routes/PrivateRoute";
 
+Parse.initialize("your_app_id", "client_key");
+Parse.serverURL = "http://localhost:1337/parse";
+
 export default class App extends Component {
   /** Gets fired when the route changes.
    *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
@@ -28,14 +31,6 @@ export default class App extends Component {
   };
 
   render() {
-    {
-      /*Parse.initialize("your_app_id", "client_key");
-    Parse.serverURL = "http://localhost:1337/parse";
-    const Library = Parse.Object.extend("Library");
-    const query = new Parse.Query(Library);
-    query.equalTo("title", "Scrum Guide");
-    query.find().then(obj => console.log(obj));*/
-    }
     return (
       <div id="app">
         <div id="sidebar-container">
@@ -71,9 +66,9 @@ const authenticating = () => {
       url: "http://localhost:1300/session",
       method: "post",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      data: { token: window.localStorage.session }
+      data: { token: window.localStorage.session },
     }).then(response => {
       console.log(response.data);
 
@@ -93,5 +88,5 @@ const authenticating = () => {
 
 // To help with authentication later!
 const auth = {
-  isAuthenticated: authenticating()
+  isAuthenticated: authenticating(),
 };
