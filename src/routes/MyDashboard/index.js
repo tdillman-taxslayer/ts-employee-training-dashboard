@@ -1,8 +1,22 @@
 import { Component } from "preact";
 import style from "./style.css";
 import { Sidebar } from "../../components/sidebar";
+import { profileImage } from "../../parse/functions";
 
 export default class MyDashboard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      profilePic: "",
+    };
+  }
+
+  componentDidMount() {
+    profileImage(window.localStorage.objectId).then(image => {
+      this.setState({ profilePic: image[0].attributes.image });
+    });
+  }
+
   render() {
     return (
       <div>
