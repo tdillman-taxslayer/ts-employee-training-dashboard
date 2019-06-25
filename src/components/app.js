@@ -2,6 +2,7 @@ import { Router, Route, route } from "preact-router";
 import { h, Component } from "preact";
 import axios from "axios";
 import Parse from "parse";
+import { profileImage } from "../parse/functions";
 
 // Code-splitting is automated for routes
 import { Sidebar, RouteIDs } from "./sidebar";
@@ -70,9 +71,9 @@ const authenticating = () => {
       url: "http://localhost:1300/session",
       method: "post",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      data: { token: window.localStorage.session },
+      data: { token: window.localStorage.session }
     }).then(response => {
       console.log(response.data);
 
@@ -92,5 +93,5 @@ const authenticating = () => {
 
 // To help with authentication later!
 const auth = {
-  isAuthenticated: authenticating(),
+  isAuthenticated: authenticating()
 };
