@@ -1,10 +1,13 @@
 import Parse from "parse";
+import axios from "axios";
+
+const parseURL = "http://localhost:1337/parse/";
 
 const userPointer = {
-  __type: 'Pointer',
-  className: '_User', 
-  objectId: window.localStorage.objectId
-  }
+  __type: "Pointer",
+  className: "_User",
+  objectId: window.localStorage.objectId,
+};
 
 export const profileImage = async objectId => {
   const query = new Parse.Query(Parse.User);
@@ -12,26 +15,33 @@ export const profileImage = async objectId => {
   return query.find();
 };
 
-export const addTags = props => {
-    // prop value of component key 
-  const tag = {
-      name = props, 
-      user = userPointer
-  }
-  const objKey 
-  const xttp = new XMLHttpRequest();
-  xttp.open("POST", "http://localhost:1337/parse/classes/Tags", true);
-  xhttp.setRequestHeader("X-Parse-Application-id", "your_app_id");
-  xhttp.setRequestHeader("X-Parse-REST-API-Key", "client_key");
-  xhttp.setRequestHeader("Content-Type", "application/json");
-  xhttp.send(JSON.stringify(tag));
-};
+export const tags = async (action, ...props) => {
+  /* Parse Cloud Tag expects a JSON Object  {
+  tag: action (String: add or delete)
+  name: name value given to tag.
+  user: userPointer
+} */
 
+  axios({
+    method: "post",
+    url: parseURL + "functions/tags",
+    headers: {
+      "X-Parse-Application-id": "your_app_id",
+      "X-Parse-REST-API-Key": "client_key",
+      "Content-Type": "application/json",
+    },
+    data: {
+      tag: action,
+      name: "",
+      user: userPointer,
+    },
+  });
+};
+/*
 export const deleteTags = async prop => {
-// prop should be the name of the tag(aka value)
 const Tags = Parse.Object.extend('Tags')
 const query = new Parse.Query(Tags);
 query.equalTo('user', userPointer)
-const 
 
 }
+*/
