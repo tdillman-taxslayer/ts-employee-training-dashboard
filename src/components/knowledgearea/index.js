@@ -2,7 +2,7 @@ import { Menu, MenuItem } from "semantic-ui-react";
 import source from "../../data/ladder.json";
 import {
   getKnowledgeAreas,
-  knowledgeAreaToFriendlyURL
+  knowledgeAreaToFriendlyURL,
 } from "../../utils/index.js";
 
 import Style from "./style";
