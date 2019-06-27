@@ -32,6 +32,7 @@ const handleSideBarOnClick = id => {
 const DispenseItem = (name, id, onClickHandler) => {
   return (
     <ListItem
+      className={Style.listitem}
       id={id}
       onClick={() => {
         onClickHandler(id);
@@ -67,7 +68,8 @@ export const Sidebar = props => {
     "My Dashboard",
     "Course Library",
     "Personal Library",
-    "About"
+    "About",
+    "Activities"
   ];
   //const ItemTitles = ["Personal Progress", "Course Library"];
   //const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];

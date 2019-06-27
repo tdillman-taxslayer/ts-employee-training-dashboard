@@ -2,8 +2,7 @@ import { Router, Route, route } from "preact-router";
 import { h, Component } from "preact";
 
 // Code-splitting is automated for routes
-import SideBar, { RouteIDs } from "./sidebar";
-import { Grid } from "semantic-ui-react";
+import SideBar from "./sidebar";
 import MyDashboard from "../routes/MyDashboard";
 import Library from "../routes/Library";
 import CapabilityLevels from "../routes/CapabilityLevels";
@@ -13,6 +12,7 @@ import Login from "../routes/Login";
 import Forgot from "../routes/Forgot";
 import About from "../routes/About";
 import PersonalLibrary from "../routes/PersonalLibrary";
+import Activities from "../routes/Activities";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -31,18 +31,18 @@ export default class App extends Component {
         </div>
         <div className={"AppContainer"}>
           <Router onChange={this.handleRoute}>
-            <Route path="/About" component={About} />
             <Route path="/" component={CapabilityLevels} />
+            <Route path="/About" component={About} />
             <Route path="/Library" component={Library} />
             <Route path="/createaccount" component={CreateAccount} />
             <Route path="/MyDashboard" component={MyDashboard} />
             <Route
-              path="/:capabilityitem/:knowledgearea?"
+              path="/:capabilityitem/:knowledgearea"
               component={KnowledgeArea}
             />
-            <Route path="/createaccount" component={CreateAccount} />
             <Route path="/login" component={Login} />
             <Route path="/forgot" component={Forgot} />
+            <Route path="/Activities" component={Activities} />
             <Route path="/PersonalLibrary" component={PersonalLibrary} />
           </Router>
         </div>
