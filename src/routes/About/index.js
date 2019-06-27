@@ -50,57 +50,59 @@ export default class About extends Component {
         </div>
         <div className={style.capabilityLevels}>
           <div className={style.introductory}>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <img
+              src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5a43f059b894c90d5c057252/0x0.png"
+              alt="TaxSlayer"
+              width="150"
+              height="150"
+            />
             <br />
             Introductory
           </div>
           <div className={style.competence}>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <img
+              src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5a43f059b894c90d5c057252/0x0.png"
+              alt="TaxSlayer"
+              width="150"
+              height="150"
+            />
             <br />
             Competence
           </div>
           <div className={style.leadership}>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <img
+              src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5a43f059b894c90d5c057252/0x0.png"
+              alt="TaxSlayer"
+              width="150"
+              height="150"
+            />
             <br />
             Leadership
           </div>
           <div className={style.mastery}>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            {" "}
+            <img
+              src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5a43f059b894c90d5c057252/0x0.png"
+              alt="TaxSlayer"
+              width="150"
+              height="150"
+            />
             <br />
             Mastery
           </div>
           <div className={style.paragraph1}>
-            <br />
             The professional performs or is capable of performing basic work in
             an area, generally under supervision. The professional is taking
             effective steps to develop his or her knowledge and skills.
           </div>
 
           <div className={style.paragraph2}>
-            <br />
             The professional performs effective, independent work in an area,
             serves as a role model for less expert professionals, and
             occasionally coaches others.
           </div>
 
           <div className={style.paragraph3}>
-            <br />
             The professional performs exemplary work in an area. The
             professional regularly coach professionals and provides
             project-level and possibly company-wide leadership. The professional
@@ -108,7 +110,6 @@ export default class About extends Component {
           </div>
 
           <div className={style.paragraph4}>
-            <br />
             The employee has deep experience across multiple projects and
             performs reference work in an area. The employee provides
             industry-level leadership and is recognized outside the company for

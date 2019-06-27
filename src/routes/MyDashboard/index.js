@@ -12,9 +12,15 @@ export default class MyDashboard extends Component {
           <p>Career Slayer</p>
         </div>
         <div className={style.profile}>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1KxvZupKbmEe6in-tGQIker6Rc3JhjCuxG-HJtpW3vhkttCP"
+            alt="Unknown User"
+            width="65"
+            height="65"
+          />
           <div className={style.firstName}>First Name: John</div>
           <div className={style.lastName}>Last Name: Doe</div>
-          <div className={style.dateOfBirth}>Start Date: November 3, 2018</div>
+          <div className={style.startDate}>Start Date: 11/3/2018</div>
           <div className={style.skills}>
             Skills: JavaScript, Java, C++, Swift, Python, HTML, CSS
           </div>
@@ -84,7 +90,7 @@ export default class MyDashboard extends Component {
           <div className={style.blank} />
           <div className={style.blank} />
         </div>
-        <div className={style.grid2}>
+        {/*<div className={style.grid2}>
           <div className={style.category}>Category</div>
           <div className={style.activity}>Activity</div>
           <div className={style.reading}>Reading</div>
@@ -95,7 +101,7 @@ export default class MyDashboard extends Component {
             Professional Experience
           </div>
           <div className={style.blank3} />
-        </div>
+    </div>*/}
       </div>
     );
   }
