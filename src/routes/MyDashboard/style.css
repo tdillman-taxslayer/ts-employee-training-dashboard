@@ -1,7 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
 
-  line-height: 1.4;
   margin: 0;
   overflow: hidden;
   overflow-y: auto;
@@ -82,17 +81,17 @@ body {
 .main {
   padding-left: 65px;
   padding-bottom: 7px;
-  font-family: "Roboto", sans-serif;
-  font-size: 33px;
+  font-size: 30px;
+
+  line-height: 1.4;
   padding-top: 15px;
   color: #d82631;
 }
 
 .profile {
   display: grid;
-  font-family: "Roboto", sans-serif;
   font-size: 17px;
-
+  line-height: 1.4;
   width: auto;
   height: auto;
 
@@ -124,14 +123,21 @@ img {
   /*border-bottom: #333740 solid 2px;*/
 }
 
-.box {
+/*.box {
   font-family: "Roboto", sans-serif;
-  font-size: 23px;
+  font-size: 16px;
   padding-top: 60px;
   text-align: center;
-  padding-left: 180px;
+  padding-left: 295px;
   padding-right: 170px;
-  /*max-width: 1300px;*/
+  max-width: 1300px;
+}*/
+.knowledgeArea {
+  grid-column-start: 2;
+  grid-column-end: 13;
+  background-color: #d82631;
+  color: white;
+  padding-left: 128px;
 }
 
 .table {
@@ -139,7 +145,10 @@ img {
   padding-bottom: 40px;
   display: grid;
   grid-template-columns: 125px repeat(11, 35px);
-  grid-template-rows: 200px repeat(4, 30px);
+  grid-template-rows: 30px 210px repeat(4, 30px);
+  padding-top: 40px;
+  font-size: 17px;
+  line-height: 1.4;
 }
 
 .configurationManagement,
@@ -155,9 +164,7 @@ img {
 .testing {
   border: 1px #333740 solid;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 200;
+
   writing-mode: vertical-lr;
 
   transform: rotate(180deg);
@@ -173,11 +180,13 @@ img {
 .blank {
   border: 1px #333740 solid;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 200;
+
   background-color: #d82631;
   color: white;
+}
+
+.capabilityLevel {
+  padding-top: 90px;
 }
 
 .grid2 {
@@ -201,8 +210,7 @@ img {
 .professionalExperience,
 .blank3 {
   border-bottom: 2px #333740 solid;
-  font-family: "Roboto", sans-serif;
-  font-size: 21px;
+
   font-weight: 200px;
 }
 

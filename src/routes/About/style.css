@@ -61,7 +61,7 @@ body {
   padding-left: 15px;
   padding-top: 10px;
   border: 2px #333740 solid;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .knowledgeAreas {
@@ -73,7 +73,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .area,
@@ -105,7 +105,7 @@ body {
 
 .goals {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 
   padding-left: 55px;
   padding-top: 10px;
