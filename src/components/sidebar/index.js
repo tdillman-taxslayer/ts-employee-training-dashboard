@@ -19,6 +19,9 @@ const handleSideBarOnClick = id => {
     case RouteIDs.PERSONALLIBRARY:
       route("/PersonalLibrary", true);
       break;
+    case RouteIDs.ACTIVITIES:
+      route("/Activities", true);
+      break;
     case RouteIDs.ABOUT:
       route("/About", true);
       break;
@@ -32,6 +35,7 @@ const handleSideBarOnClick = id => {
 const DispenseItem = (name, id, onClickHandler) => {
   return (
     <ListItem
+      className={Style.listitem}
       id={id}
       onClick={() => {
         onClickHandler(id);
@@ -67,6 +71,7 @@ export const Sidebar = props => {
     "My Dashboard",
     "Course Library",
     "Personal Library",
+    "Activities",
     "About"
   ];
   //const ItemTitles = ["Personal Progress", "Course Library"];
@@ -76,6 +81,7 @@ export const Sidebar = props => {
     RouteIDs.DASHBOARD,
     RouteIDs.LIBRARY,
     RouteIDs.PERSONALLIBRARY,
+    RouteIDs.ACTIVITIES,
     RouteIDs.ABOUT
   ];
   return (
@@ -92,5 +98,6 @@ export const RouteIDs = {
   DASHBOARD: "my-dashboard",
   LIBRARY: "Library",
   PERSONALLIBRARY: "Personal Library",
+  ACTIVITIES: "Activities",
   ABOUT: "About"
 };
