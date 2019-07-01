@@ -76,11 +76,12 @@ body {
 
 .button {
   grid-area: right;
-  width: 100px;
+  width: 80px;
+  height: 40px;
   background-color: white;
   color: #333740;
   float: right;
-  margin-top: 8px;
+  margin-top: 12px;
   margin-bottom: 8px;
   border: none;
   font-size: 16px;

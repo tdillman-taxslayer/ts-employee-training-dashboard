@@ -186,7 +186,9 @@ img {
 }
 
 .capabilityLevel {
-  padding-top: 90px;
+  padding-top: 100px;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .grid2 {

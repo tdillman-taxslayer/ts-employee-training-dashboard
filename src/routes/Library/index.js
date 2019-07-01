@@ -13,7 +13,7 @@ export default class Library extends Component {
               <button class={Style.button}>Filter</button>
             </div>
           </div>
-          <div className={Style.main}>Library</div>
+          <div className={Style.main}>Course Library</div>
           <div className={Style.grid}>
             <div className={Style.list}>Programming 101</div>
             <div className={Style.list}>Python Basics</div>
