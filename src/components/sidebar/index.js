@@ -34,20 +34,17 @@ const handleSideBarOnClick = id => {
 
 const DispenseItem = (name, id, onClickHandler) => {
   return (
-    <ListItem
-      className={Style.listitem}
+    <div
+      className={Style.listItemGrid}
       id={id}
       onClick={() => {
         onClickHandler(id);
       }}
     >
-      <ListIcon name="github" size="small" verticalAlign="middle" />
-      <ListContent>
-        <ListHeader>
-          <a className={Style.sidebarItem}> {name} </a>{" "}
-        </ListHeader>{" "}
-      </ListContent>{" "}
-    </ListItem>
+      <div className={Style.listItem}>
+        <p className={Style.sidebarItem}> {name} </p>
+      </div>
+    </div>
   );
 };
 /**
@@ -86,10 +83,7 @@ export const Sidebar = props => {
   ];
   return (
     <div className={Style.sidebar}>
-      <List divided relaxed>
-        {" "}
-        {GenerateItems(ItemTitles, ItemId, handleSideBarOnClick)}{" "}
-      </List>{" "}
+      {GenerateItems(ItemTitles, ItemId, handleSideBarOnClick)}{" "}
     </div>
   );
 };

@@ -27,6 +27,7 @@
     "nodemon": "^1.19.1",
     "per-env": "^1.0.2",
     "preact-cli": "^2.1.0",
+    "preact-cli-plugin-fast-async": "^1.0.1",
     "preact-render-spy": "^1.2.1"
   },
   "dependencies": {
