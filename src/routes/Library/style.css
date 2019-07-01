@@ -3,7 +3,7 @@ body {
 }
 
 .app {
-  margin-left: 160px;
+  margin-left: 100px;
   margin-top: 50px;
 }
 
@@ -36,17 +36,23 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto;
-  padding-left: 200px;
-  padding-top: 50px;
+  grid-template-columns: auto auto auto;
+  /*padding-left: 200px;*/
+  padding-top: 30px;
 }
 
-.main p {
-  text-align: center;
+.main {
+  padding-top: 30px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-size: 33px;
 }
 
-.main h1 {
-  text-align: center;
+.list {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-size: 17px;
+  text-decoration: underline;
 }
 
 .utilitybar {
