@@ -3,8 +3,8 @@ body {
 }
 
 .app {
-  margin-left: 290px;
-  margin-top: 90px;
+  margin-left: 100px;
+  margin-top: 50px;
 }
 
 .sidenav {
@@ -36,15 +36,21 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
+  padding-top: 30px;
 }
 
-.main p {
-  text-align: center;
+.main {
+  padding-top: 30px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-size: 33px;
 }
-
-.main h1 {
-  text-align: center;
+.list {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-size: 17px;
+  text-decoration: underline;
 }
 
 .utilitybar {
@@ -76,13 +82,15 @@ body {
   background-color: white;
   color: #333740;
   float: right;
-  margin-top: 8px;
+  margin-top: 12px;
   margin-bottom: 8px;
   border: none;
   font-size: 16px;
   border-radius: 8px;
   transition-duration: 0.4s;
   cursor: pointer;
+  width: 80px;
+  height: 40px;
 }
 
 /* .left-grid-button {
@@ -111,6 +119,6 @@ body {
 }
 
 input {
-  margin-left: 200px;
-  margin-top: 50px;
+  margin-left: 350px;
+  margin-top: 30px;
 }

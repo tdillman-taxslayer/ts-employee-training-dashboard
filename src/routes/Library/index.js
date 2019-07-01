@@ -13,34 +13,72 @@ export default class Library extends Component {
               <button class={Style.button}>Filter</button>
             </div>
           </div>
+          <div className={Style.main}>Course Library</div>
           <div className={Style.grid}>
-            <div className={Style.main}>
-              <h1>Library</h1>
-              <p>
-                <u>Programming 101</u>
-              </p>
-              <p>
-                <u>Python Basics</u>
-              </p>
-              <p>
-                <u>Cyber Threat Analysis</u>
-              </p>
-              <p>
-                <u>C++ basics</u>
-              </p>
-              <p>
-                <u>HTML 5 Changes</u>
-              </p>
-              <p>
-                <u>Security Training</u>
-              </p>
-              <p>
-                <u>Ecmascript</u>
-              </p>
-              <p>
-                <u>Javascript Basics</u>
-              </p>
-            </div>
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>{" "}
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>
+            <div className={Style.list}>Programming 101</div>
+            <div className={Style.list}>Python Basics</div>
+            <div className={Style.list}>Cyber Threat Analysis</div>
+            <div className={Style.list}>C++ Basics</div>
+            <div className={Style.list}>HTML 5 Changes</div>
+            <div className={Style.list}>Security Training</div>
+            <div className={Style.list}>Ecmascript</div>
+            <div className={Style.list}>Javascript Basics</div>
           </div>
         </div>
       </div>
