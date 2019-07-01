@@ -1,32 +1,16 @@
 import { Component } from "preact";
 import style from "./style.css";
 import { Sidebar } from "../../components/sidebar";
-import {
-  Card,
-  CardContent,
-  Icon,
-  CardMeta,
-  CardGroup,
-  CardHeader,
-  CardDescription
-} from "semantic-ui-react";
-
-const ActivityCard = props => {
+import ActivityCard from "../../components/activitycard";
+const Card = props => {
   const { name, description, commentCount, position } = props;
   return (
-    <CardGroup>
-      <Card>
-        <CardContent>
-          <CardHeader>{name}</CardHeader>
-          <CardMeta>{position}</CardMeta>
-          <CardDescription />
-        </CardContent>
-
-        <CardContent extra>
-          <Icon name="comment" />
-        </CardContent>
-      </Card>
-    </CardGroup>
+    <ActivityCard
+      title={name}
+      description={description}
+      comments={commentCount}
+      position={position}
+    />
   );
 };
 
@@ -43,7 +27,8 @@ export default class Activities extends Component {
           {[
             {
               name: "Tim",
-              description: "some description",
+              description:
+                "Today I'm working on getting my development environment setup and working on various debug tasks",
               position: "iOS Developer"
             },
             {
@@ -63,11 +48,12 @@ export default class Activities extends Component {
             }
           ].map(i => {
             return (
-              <ActivityCard
+              <Card
                 className
                 name={i.name}
                 description={i.description}
                 position={i.position}
+                commentCount={i.commentCount || "0"}
               />
             );
           })}
