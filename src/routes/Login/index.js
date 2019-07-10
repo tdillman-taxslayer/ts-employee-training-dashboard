@@ -1,6 +1,6 @@
-import React, { Component } from "preact";
-import SideBar from "../../components/sidebar";
-import Style from "./login.css";
+import { Component } from "preact";
+import Style from "./style.css";
+
 export default class Login extends Component {
   render() {
     return (
@@ -33,7 +33,7 @@ export default class Login extends Component {
             Cancel
           </button>
           <span className={Style.psw}>
-            Forgot <a href="#">Password></a>
+            <a href="/forgot">Forgot Password</a>
           </span>
         </div>
       </div>

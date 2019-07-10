@@ -25,10 +25,9 @@ const handleSideBarOnClick = id => {
     case RouteIDs.ABOUT:
       route("/About", true);
       break;
-
-    /*    case RouteIDs.INBOX:
-      route("/indox", true);
-      break;*/
+    case RouteIDs.SIGNOUT:
+      route("/login", true);
+      break;
   }
 };
 
@@ -62,24 +61,22 @@ const GenerateItems = (titles, ids, onClickHandler) => {
 };
 
 export const Sidebar = props => {
-  //const ItemTitles = ["Course Library", "About"];
-  //const ItemId = [RouteIDs.LIBRARY, RouteIDs.DASHBOARD];
   const ItemTitles = [
     "My Dashboard",
+    "Activities",
     "Course Library",
     "Personal Library",
-    "Activities",
-    "About"
+    "About",
+    "Sign Out"
   ];
-  //const ItemTitles = ["Personal Progress", "Course Library"];
-  //const ItemId = [RouteIDs.DASHBOARD, RouteIDs.LIBRARY];
-  //const ItemTitles = ["Personal Progress", "Course Library"];
+
   const ItemId = [
     RouteIDs.DASHBOARD,
+    RouteIDs.ACTIVITIES,
     RouteIDs.LIBRARY,
     RouteIDs.PERSONALLIBRARY,
-    RouteIDs.ACTIVITIES,
-    RouteIDs.ABOUT
+    RouteIDs.ABOUT,
+    RouteIDs.SIGNOUT
   ];
   return (
     <div className={Style.sidebar}>
@@ -90,8 +87,9 @@ export const Sidebar = props => {
 
 export const RouteIDs = {
   DASHBOARD: "my-dashboard",
+  ACTIVITIES: "Activities",
   LIBRARY: "Library",
   PERSONALLIBRARY: "Personal Library",
-  ACTIVITIES: "Activities",
-  ABOUT: "About"
+  ABOUT: "About",
+  SIGNOUT: "Sign Out"
 };

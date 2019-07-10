@@ -29,6 +29,9 @@ button {
 button:hover {
   opacity: 1;
 }
+a {
+  color: pink;
+}
 /* .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;

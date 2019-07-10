@@ -1,52 +1,27 @@
-import React, { Component } from "preact";
+import { Component } from "preact";
 import Style from "./forgot.css";
 import { Sidebar } from "../../components/sidebar";
+
 export default class Forgot extends Component {
   render() {
     return (
-      <div className="app">
-        <Sidebar />
-        <div className="utilitybar">
-          <div className="utalitybargrid">
-            <button className="button">Add</button>
-            <button className="button">Filter</button>
-          </div>
+      <div>
+        <div className={Style.container}>
+          <div className={Style.main}>Forgot Password?</div>
+          <label for="email">
+            <b>Email Address</b>
+          </label>
+          <input
+            type="text"
+            placeholder="Enter Email Address"
+            name="email"
+            required
+          />
+          <button type="submit">Reset Password</button>
+          <button type="button" className={Style.cancelbtn}>
+            <a href="/login">Cancel</a>
+          </button>
         </div>
-        <div class="grid">
-          <div class="main">
-            <h1>Personal Library</h1>
-            <p>
-              <u>Programming 101</u>
-            </p>
-            <p>
-              <u>Python Basics</u>
-            </p>
-            <p>
-              <u>Cyber Threat Analysis</u>
-            </p>
-            <p>
-              <u>C++ basics</u>
-            </p>
-            <p>
-              <u>HTML 5 Changes</u>
-            </p>
-            <p>
-              <u>Security Training</u>
-            </p>
-            <p>
-              <u>Ecmascript</u>
-            </p>
-            <p>
-              <u>Javascript Basics</u>
-            </p>
-          </div>
-        </div>
-        <input
-          type="text"
-          id="myInput"
-          onkeyup="myFunction()"
-          placeholder="Search for names.."
-        />
       </div>
     );
   }

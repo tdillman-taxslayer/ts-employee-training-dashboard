@@ -58,12 +58,12 @@ export default class PersonalLibrary extends Component {
           <div className={style.list}>Javascript Basics</div>
           <div className={style.list}>Programming 101</div>
         </div>
-        <input
+        {/*}        <input
           type="text"
           id="myInput"
           onkeyup="myFunction()"
           placeholder="Search for names.."
-        />
+    />*/}
       </div>
     );
   }

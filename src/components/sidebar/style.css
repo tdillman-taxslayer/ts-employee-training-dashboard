@@ -4,7 +4,7 @@
   max-width: 200px;
   min-width: 200px;
   margin: 0px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -23,22 +23,19 @@
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 20px;
-  min-height: 50px;
+  min-height: 45px;
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.listItem p {
-  vertical-align: middle;
   color: white;
-}
-
-.listItem p:hover {
-  cursor: pointer;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
 }
 
 .listItem:hover {
-  background-color: #474d5a;
+  background-color: white;
+  color: #333740;
+  font-size: 19px;
+  transition: 0.3s all linear;
 }
